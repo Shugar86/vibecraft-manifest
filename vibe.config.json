@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vibecraft.dev/schemas/vibe.schema.json",
+  "version": "1.0",
+  "meta": {
+    "name": "Project Aura",
+    "description": "A minimal meditation timer based on calm, natural vibes."
+  },
+  "vibe": {
+    "words": ["спокойствие", "природа", "воздух", "концентрация"],
+    "energyLevel": 2,
+    "personality": "сдержанный, поддерживающий, ненавязчивый"
+  },
+  "tokens": {
+    "palette": {
+      "primary": "#5A9A78",
+      "secondary": "#A8D8B9",
+      "background": "#F5F7F6",
+      "surface": "#FFFFFF",
+      "textPrimary": "#2C3E50",
+      "textSecondary": "#7F8C8D"
+    },
+    "typography": {
+      "fontFamily": "'Inter', sans-serif",
+      "display": { "fontSize": "48px", "fontWeight": 300 },
+      "heading": { "fontSize": "24px", "fontWeight": 500 },
+      "body": { "fontSize": "16px", "fontWeight": 400 }
+    },
+    "motion": {
+      "duration": "300ms",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "animation": "fadeIn 0.5s ease-out"
+    },
+    "spacing": {
+      "base": "8px",
+      "small": "4px",
+      "medium": "16px",
+      "large": "32px"
+    },
+    "radius": {
+      "small": "4px",
+      "medium": "8px",
+      "large": "16px"
+    }
+  }
+}
