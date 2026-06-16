@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Shugar86/vibecraft-manifest/schemas/morph-proposal.schema.json",
+  "title": "MorphProposal",
+  "description": "A proposed edit to a contract, produced by VibeLearn from a reflection pass. A hypothesis, not a command — a human reviews before it is applied.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "target", "change", "touches_anchor", "status"],
+  "properties": {
+    "id": { "type": "string", "description": "Unique id, e.g. <reflection_pass>_<index>." },
+    "target": { "type": "string", "description": "File or section the proposal wants to change." },
+    "change": { "type": "string", "description": "Human-readable description of the edit." },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Sessions / reflection passes that motivated the proposal."
+    },
+    "touches_anchor": {
+      "type": "boolean",
+      "description": "true → the edit touches the Anchor; requires human conversation, not a click."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "approved", "rejected", "modified"],
+      "default": "pending"
+    }
+  }
+}

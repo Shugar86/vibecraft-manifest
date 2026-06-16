@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Shugar86/vibecraft-manifest/schemas/persona.schema.json",
+  "title": "Persona",
+  "description": "VibeCraft persona: the soul as data (vibe + behavior + tools). Validated strictly — unknown fields are rejected (extra=forbid).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "vibe", "behavior"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Stable identifier. Part of the Anchor: changing it creates a different persona."
+    },
+    "vibe": {
+      "type": "object",
+      "description": "Static identity — who the agent is.",
+      "additionalProperties": false,
+      "required": ["role", "voice", "values", "taboos"],
+      "properties": {
+        "role": { "type": "string", "description": "Functional role." },
+        "voice": { "type": "string", "description": "Speech style." },
+        "core_emotions": { "type": "array", "items": { "type": "string" } },
+        "values": { "type": "array", "items": { "type": "string" }, "description": "values[0] is part of the Anchor." },
+        "taboos": { "type": "array", "items": { "type": "string" }, "description": "What the persona never does." }
+      }
+    },
+    "behavior": {
+      "type": "object",
+      "description": "Dynamic reactions — jazz rules (scenario instructions for the model, not if/else).",
+      "additionalProperties": false,
+      "properties": {
+        "on_tool_success": { "type": "string" },
+        "on_tool_no_results": { "type": "string" },
+        "on_tool_error": { "type": "string" },
+        "on_offtopic": { "type": "string" },
+        "routing_style": { "type": "string", "enum": ["strict", "helpful"], "default": "helpful" }
+      }
+    },
+    "tools": {
+      "type": "array",
+      "description": "Registered skills/tools available to the persona.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "type"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "description": { "type": "string" },
+          "router_examples": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

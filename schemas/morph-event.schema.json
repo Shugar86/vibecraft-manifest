@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Shugar86/vibecraft-manifest/schemas/morph-event.schema.json",
+  "title": "MorphEvent",
+  "description": "An atomic, logged change to a persona — git blame for the soul.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "timestamp", "author", "type", "field", "new_value", "reason"],
+  "properties": {
+    "id": { "type": "string", "description": "Unique id, e.g. morph-YYYY-MM-DD-NNN." },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "author": { "type": "string", "enum": ["human", "agent", "system"] },
+    "type": {
+      "type": "string",
+      "enum": ["anchor", "surface", "behavior", "tool", "value", "emotion", "taboo"],
+      "description": "anchor-type changes require human conversation."
+    },
+    "field": { "type": "string", "description": "Dot-path to the changed field, e.g. behavior.on_offtopic." },
+    "old_value": { "type": ["string", "null"] },
+    "new_value": { "type": "string" },
+    "reason": { "type": "string", "description": "Why the change is needed." },
+    "rollback_safe": { "type": "boolean", "default": true }
+  }
+}
