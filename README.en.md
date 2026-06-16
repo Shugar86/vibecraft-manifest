@@ -67,6 +67,8 @@ Every axis is given on two levels: **why** (in prose) and **how** (schemas, cont
 | [`docs/en/interaction.md`](./docs/en/interaction.md) | How agents interact: Sync, Social, shared memory, the loop |
 | [`docs/en/contracts.md`](./docs/en/contracts.md) | Formal contracts: Persona, Anchor/Surface, Morph, Reflection |
 | [`schemas/`](./schemas) | Machine-readable JSON schemas (language-neutral) |
+| [`MANIFEST.md`](./MANIFEST.md) | The original single-file manifesto (RU, a v1.2 snapshot) |
+| [`vibe.config.json`](./vibe.config.json) | An example VibePersona in v1.2 format (vibe / behavior / pulse / guard / tokens) |
 
 Russian: [`docs/ru/`](./docs/ru). For an agent reader: [`AGENTS.md`](./AGENTS.md).
 
@@ -89,6 +91,22 @@ Russian: [`docs/ru/`](./docs/ru). For an agent reader: [`AGENTS.md`](./AGENTS.md
 
 ---
 
+## VibeCraft ≠ "vibe coding"
+
+| | **VibeCraft** | Vibe coding |
+|---|---|---|
+| Priority | Mood → function | Speed → function |
+| Role of AI | Tool + persona | Code generator |
+| Result | A product with character | A quick prototype |
+| Scale | From UI to multi-agent systems | One-off tasks |
+
+---
+
 ## License
 
-[MIT](./LICENSE) © 2026 Shugar86. Ideas — free to use and build upon.
+Dual — see [`LICENSE.md`](./LICENSE.md):
+
+- **Text** (`.md`) — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): share and adapt freely with attribution.
+- **Code and configs** (`.json` etc.) — MIT.
+
+© 2025–2026 Alexander Zakharchenko · R&D Holding "Zakharchenko" ([Shugar86](https://github.com/Shugar86)).

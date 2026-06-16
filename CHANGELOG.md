@@ -6,7 +6,9 @@
 
 ## [1.0.0] — 2026-06-16
 
-Первый публичный релиз манифеста VibeCraft. Двуязычно (RU/EN), философия + инженерия.
+Расширение исходного seed-манифеста (RU, снапшот v1.2: `MANIFEST.md`, `vibe.config.json`,
+`LICENSE.md`) до структурированного двуязычного релиза (RU/EN), философия + инженерия, v1.0→v1.4.
+Лицензия — двойная (CC BY 4.0 на тексты, MIT на код/конфиги), см. [`LICENSE.md`](./LICENSE.md).
 
 ### Added
 - `README.md` / `README.en.md` — витрина: тезис (Персона + Навыки + Автономия), лестница версий, навигация для человека и машины.
@@ -17,4 +19,8 @@
 - `docs/{ru,en}/contracts.md` — формальные контракты: Persona, Anchor/Surface, MorphEvent, MorphProposal, ReflectionPass, инварианты петли.
 - `schemas/*.json` — машиночитаемые JSON-схемы (persona, morph-event, morph-proposal).
 - `AGENTS.md` — машинный вход: как читать репозиторий.
-- `LICENSE` (MIT).
+
+### Kept (из исходного seed)
+- `MANIFEST.md` — исходный однофайловый манифест v1.2 (RU).
+- `vibe.config.json` — пример VibePersona v1.2.
+- `LICENSE.md` — двойная лицензия (CC BY 4.0 / MIT).

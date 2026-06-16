@@ -67,6 +67,8 @@
 | [`docs/ru/interaction.md`](./docs/ru/interaction.md) | Как агенты взаимодействуют: Sync, Social, общая память, петля |
 | [`docs/ru/contracts.md`](./docs/ru/contracts.md) | Формальные контракты: Persona, Anchor/Surface, Morph, Reflection |
 | [`schemas/`](./schemas) | Машиночитаемые JSON-схемы (язык-нейтрально) |
+| [`MANIFEST.md`](./MANIFEST.md) | Исходный однофайловый манифест (RU, снапшот v1.2) |
+| [`vibe.config.json`](./vibe.config.json) | Пример VibePersona в формате v1.2 (vibe / behavior / pulse / guard / tokens) |
 
 English: [`docs/en/`](./docs/en). Для агента-читателя: [`AGENTS.md`](./AGENTS.md).
 
@@ -89,6 +91,22 @@ English: [`docs/en/`](./docs/en). Для агента-читателя: [`AGENTS
 
 ---
 
+## VibeCraft ≠ «vibe coding»
+
+| | **VibeCraft** | Vibe coding |
+|---|---|---|
+| Приоритет | Настроение → функция | Скорость → функция |
+| Роль ИИ | Инструмент + персона | Генератор кода |
+| Результат | Продукт с характером | Быстрый прототип |
+| Масштаб | От UI до мультиагентных систем | Одиночные задачи |
+
+---
+
 ## Лицензия
 
-[MIT](./LICENSE) © 2026 Shugar86. Идеи — для свободного использования и развития.
+Двойная — см. [`LICENSE.md`](./LICENSE.md):
+
+- **Тексты** (`.md`) — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): свободно делиться и адаптировать с указанием авторства.
+- **Код и конфиги** (`.json` и пр.) — MIT.
+
+© 2025–2026 Alexander Zakharchenko · R&D Холдинг «Захарченко» ([Shugar86](https://github.com/Shugar86)).

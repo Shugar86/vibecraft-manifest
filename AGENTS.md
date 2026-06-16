@@ -22,6 +22,9 @@ Read in this order for the full model:
 
 `<lang>` is `ru` (primary) or `en`. Both directories are full mirrors.
 
+Original seed (kept): `MANIFEST.md` — the single-file v1.2 manifesto (RU); `vibe.config.json` — a
+concrete VibePersona example (vibe / behavior / pulse / guard / tokens).
+
 ## Machine-readable contracts
 
 `schemas/` holds language-neutral JSON Schema (draft 2020-12):
