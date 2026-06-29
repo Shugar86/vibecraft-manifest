@@ -1,5 +1,7 @@
 # Changelog
 
+🌐 **Русский** · [English](./CHANGELOG.en.md)
+
 Формат — [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/). Здесь — история **манифеста**
 (документов), а не отдельного продукта. Лестница самой методологии VibeCraft (v1.0→v1.4) описана в
 [`docs/ru/stack.md`](./docs/ru/stack.md).
@@ -21,6 +23,6 @@
 - `AGENTS.md` — машинный вход: как читать репозиторий.
 
 ### Kept (из исходного seed)
-- `MANIFEST.md` — исходный однофайловый манифест v1.2 (RU).
-- `vibe.config.json` — пример VibePersona v1.2.
+- `MANIFEST.md` — исходный однофайловый манифест v1.2 (RU; English: `MANIFEST.en.md`).
+- `vibe.config.json` — пример VibePersona v1.2 (English: `vibe.config.en.json`).
 - `LICENSE.md` — двойная лицензия (CC BY 4.0 / MIT).
