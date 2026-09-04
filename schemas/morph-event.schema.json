@@ -2,23 +2,23 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/Shugar86/vibecraft-manifest/schemas/morph-event.schema.json",
   "title": "MorphEvent",
-  "description": "An atomic, logged change to a persona — git blame for the soul.",
+  "description": "A record of an applied persona change. This format does not implement logging, authenticate approval, establish client loading, or execute rollback; the integration links it to actual evidence.",
   "type": "object",
   "additionalProperties": false,
   "required": ["id", "timestamp", "author", "type", "field", "new_value", "reason"],
   "properties": {
     "id": { "type": "string", "description": "Unique id, e.g. morph-YYYY-MM-DD-NNN." },
     "timestamp": { "type": "string", "format": "date-time" },
-    "author": { "type": "string", "enum": ["human", "agent", "system"] },
+    "author": { "type": "string", "enum": ["human", "agent", "system"], "description": "Executor of the recorded change, not the source of authorization. An agent may apply a specifically authorized change within scope." },
     "type": {
       "type": "string",
       "enum": ["anchor", "surface", "behavior", "tool", "value", "emotion", "taboo"],
-      "description": "anchor-type changes require human conversation."
+      "description": "Declared change category. Any semantic effect on the agreed Anchor requires substantive human conversation and specific approval, even when another category is selected."
     },
     "field": { "type": "string", "description": "Dot-path to the changed field, e.g. behavior.on_offtopic." },
-    "old_value": { "type": ["string", "null"] },
-    "new_value": { "type": "string" },
+    "old_value": { "type": ["string", "null"], "description": "Previous value as a string, or null. Structured values require an agreed representation; this schema does not define a patch format." },
+    "new_value": { "type": "string", "description": "Applied value as a string. A record alone does not prove the change was loaded or produced the intended behavior." },
     "reason": { "type": "string", "description": "Why the change is needed." },
-    "rollback_safe": { "type": "boolean", "default": true }
+    "rollback_safe": { "type": "boolean", "default": true, "description": "A claim requiring verification of actual rollback consequences. The schema default is an annotation, not evidence of safety or permission to roll back." }
   }
 }

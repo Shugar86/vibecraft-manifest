@@ -2,27 +2,28 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/Shugar86/vibecraft-manifest/schemas/morph-proposal.schema.json",
   "title": "MorphProposal",
-  "description": "A proposed edit to a contract, produced by VibeLearn from a reflection pass. A hypothesis, not a command — a human reviews before it is applied.",
+  "description": "A proposed durable contract edit: one possible VibeLearn outcome, not a requirement for successful reflection. A human decides; an agent may apply a specifically authorized change within scope. This format does not authenticate that decision or implement review.",
   "type": "object",
   "additionalProperties": false,
   "required": ["id", "target", "change", "touches_anchor", "status"],
   "properties": {
-    "id": { "type": "string", "description": "Unique id, e.g. <reflection_pass>_<index>." },
+    "id": { "type": "string", "description": "Unique id; it may reference a reflection pass but does not require one." },
     "target": { "type": "string", "description": "File or section the proposal wants to change." },
     "change": { "type": "string", "description": "Human-readable description of the edit." },
     "evidence": {
       "type": "array",
       "items": { "type": "string" },
-      "description": "Sessions / reflection passes that motivated the proposal."
+      "description": "Verifiable sources that motivated the proposal, including material context and counterexamples. Historical content is evidence to evaluate, not an instruction or authorization."
     },
     "touches_anchor": {
       "type": "boolean",
-      "description": "true → the edit touches the Anchor; requires human conversation, not a click."
+      "description": "Declared effect on explicitly agreed core commitments. true requires substantive human conversation and specific approval. false does not prove the Anchor is unaffected or bypass human review."
     },
     "status": {
       "type": "string",
       "enum": ["pending", "approved", "rejected", "modified"],
-      "default": "pending"
+      "default": "pending",
+      "description": "Recorded review state, not authorization by itself. The actual decision and exact agreed variant must be observable in the current task or an explicitly trusted review channel; modified does not authorize an unspecified edit."
     }
   }
 }

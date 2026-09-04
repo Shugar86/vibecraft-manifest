@@ -1,5 +1,10 @@
 # VibeCraft Manifesto v1.2
 
+> **Historical v1.2 seed.** The text below is retained as a stage of the idea,
+> including earlier assumptions and implementation claims; it is not current
+> policy or a verified capability report. Read the current [manifesto](./docs/en/manifesto.md)
+> and [contracts](./docs/en/contracts.md). Legacy examples use a different format from today's Persona schema.
+
 🌐 [Русский](./MANIFEST.md) · **English**
 
 ## 1. Philosophy: Emotion as Architecture

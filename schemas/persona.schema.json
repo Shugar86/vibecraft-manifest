@@ -2,31 +2,31 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/Shugar86/vibecraft-manifest/schemas/persona.schema.json",
   "title": "Persona",
-  "description": "VibeCraft persona: the soul as data (vibe + behavior + tools). Validated strictly — unknown fields are rejected (extra=forbid).",
+  "description": "A declarative format for recognizable choices and expression (vibe + behavior + tools), not proof of feelings or a running persona. A JSON Schema validator must enforce the constraints; this repository supplies no compiler or runtime.",
   "type": "object",
   "additionalProperties": false,
   "required": ["name", "vibe", "behavior"],
   "properties": {
     "name": {
       "type": "string",
-      "description": "Stable identifier. Part of the Anchor: changing it creates a different persona."
+      "description": "Stable identifier. Whether the name belongs to the Anchor is determined by an explicit project agreement, not by this schema."
     },
     "vibe": {
       "type": "object",
-      "description": "Static identity — who the agent is.",
+      "description": "Intended role, voice, and commitments that guide choices. Observable behavior must be evaluated separately; this format does not establish subjective identity.",
       "additionalProperties": false,
       "required": ["role", "voice", "values", "taboos"],
       "properties": {
         "role": { "type": "string", "description": "Functional role." },
         "voice": { "type": "string", "description": "Speech style." },
-        "core_emotions": { "type": "array", "items": { "type": "string" } },
-        "values": { "type": "array", "items": { "type": "string" }, "description": "values[0] is part of the Anchor." },
-        "taboos": { "type": "array", "items": { "type": "string" }, "description": "What the persona never does." }
+        "core_emotions": { "type": "array", "items": { "type": "string" }, "description": "Expressive qualities to convey through behavior, not measured or claimed internal feelings. Array order does not define the Anchor." },
+        "values": { "type": "array", "items": { "type": "string" }, "description": "Commitments intended to guide choices. Anchor membership requires explicit agreement; values[0] has no automatic authority." },
+        "taboos": { "type": "array", "items": { "type": "string" }, "description": "Declared behavioral boundaries; their enforcement belongs to the implementation and they do not override platform policy." }
       }
     },
     "behavior": {
       "type": "object",
-      "description": "Dynamic reactions — jazz rules (scenario instructions for the model, not if/else).",
+      "description": "Scenario guidance for improvisation, not mandatory stock lines or executable if/else rules. This limited scenario set does not exhaust a persona's choices.",
       "additionalProperties": false,
       "properties": {
         "on_tool_success": { "type": "string" },
@@ -38,7 +38,7 @@
     },
     "tools": {
       "type": "array",
-      "description": "Registered skills/tools available to the persona.",
+      "description": "Declared skills/tools for a prospective integration. A declaration neither installs a tool, establishes runtime availability, nor authorizes its use.",
       "items": {
         "type": "object",
         "additionalProperties": false,

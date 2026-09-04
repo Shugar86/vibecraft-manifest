@@ -1,46 +1,74 @@
 # AGENTS.md — machine entry point
 
-This file tells an AI agent (or any automated reader) how to navigate this repository.
-Human entry points: [`README.md`](./README.md) (RU) · [`README.en.md`](./README.en.md) (EN).
+This file guides work on this repository. Human entry points:
+[README.md](./README.md) (RU) · [README.en.md](./README.en.md) (EN).
 
 ## What this repo is
 
-A **manifesto**, not runnable code: VibeCraft — a way of thinking about how to engineer an AI agent's
-character ("soul") and how agents interact. Vendor-neutral, framework-agnostic, applies to any AI
-operator, not only coding agents.
+A vendor-neutral manifesto about character, experience and shared thought, for AI
+operators beyond coding. It contains conceptual documents, three JSON schemas,
+examples and document checks — not an agent runtime or a universal operational policy.
+
+“Soul,” “sleep” and “life” are metaphors. Preserve the author's expressive intent
+without presenting an implementation, subjective experience or measured result
+that the available evidence does not establish.
 
 ## How to read
 
-Read in this order for the full model:
+Start from the missing question; a complete reading sequence is not a prerequisite:
 
-1. `docs/<lang>/manifesto.md` — the vision (Persona + Skills + Autonomy; soul as data).
-2. `docs/<lang>/stack.md` — the version ladder v1.0→v1.4, each axis with thesis + engineering.
-3. `docs/<lang>/threads.md` — six cross-cutting threads walked through every version:
-   human↔AI via vibe, AI↔AI, where the soul lives, explaining vibe to an AI, self-change, protection.
-4. `docs/<lang>/interaction.md` — Sync (one soul, many bodies), Social (shared memory + shared edits), the loop.
-5. `docs/<lang>/contracts.md` — formal contracts (Persona, Anchor/Surface, MorphEvent, MorphProposal, ReflectionPass).
+- `docs/<lang>/manifesto.md`: purpose, character and participation in an unfinished idea.
+- `docs/<lang>/stack.md`: historical v1.0–v1.4 axes and possible engineering forms.
+- `docs/<lang>/threads.md`: six cross-cutting questions across those stages.
+- `docs/<lang>/interaction.md`: human/agent collaboration, continuity, sharing and learning.
+- `docs/<lang>/contracts.md`: format boundaries and schema-compatible examples.
 
-`<lang>` is `ru` (primary) or `en`. Both directories are full mirrors.
-
-Original seed (kept): `MANIFEST.md` — the single-file v1.2 manifesto (RU); `vibe.config.json` — a
-concrete VibePersona example (vibe / behavior / pulse / guard / tokens).
+`<lang>` is `ru` (primary) or `en`; maintained documents are full semantic mirrors.
+The original `MANIFEST.md` / `MANIFEST.en.md` and `vibe.config*.json` are historical
+v1.2 snapshots, not current guidance or current-schema examples. Keep their content
+as history; a visible status note may point to the maintained documents.
 
 ## Machine-readable contracts
 
-`schemas/` holds language-neutral JSON Schema (draft 2020-12):
-
-- `persona.schema.json` — the Persona (vibe + behavior + tools).
-- `morph-event.schema.json` — an atomic change to a persona.
-- `morph-proposal.schema.json` — a proposed edit awaiting human review.
+`schemas/` contains JSON Schema draft 2020-12 for Persona, MorphEvent and
+MorphProposal. `ReflectionPass` is illustrative and has no schema here.
+A schema validates structure, not permissions, client loading, behavior or learning.
+`examples/aura.ru.json` and `examples/aura.en.json` use the current Persona schema.
+Neither a tool declaration nor a schedule in a legacy example creates a capability.
 
 ## Conventions
 
-- Every doc carries YAML frontmatter (`title`, `lang`, `version`, `layer`).
-- Headings are stable; deep links rely on them.
-- Cross-links are relative. RU↔EN are linked via a 🌐 line at the top of each doc.
+- Every maintained document under `docs/{ru,en}/` has YAML frontmatter:
+  `title`, `lang`, `version`, `layer`. Version is the **document revision**;
+  the v1.0–v1.4 conceptual ladder has a separate meaning.
+- Preserve existing headings/anchors; readers may have external deep links.
+- Use relative local links and a top-of-document RU↔EN language link.
+- Update the matching language, navigation and examples when changing meaning.
+- Preserve attribution, licenses and historical records. Do not add private context.
+- Match specificity to the problem: no new mandatory persona questionnaire,
+  novelty ritual or duplicated runtime policy merely to make the text look complete.
 
 ## Invariants worth honoring
 
-- Anchor (core identity) changes only through human conversation; surface changes go through review.
-- Reflection compresses memory; it must not hoard.
-- No autonomous self-editing of a contract; a human is always at the gate.
+- Character is expressed through choices, including ordinary success and discovery.
+- Humans and agents can develop the question together; discussion is not an assignment.
+- Experience may revise understanding without creating a new rule or memory record.
+- Consolidation preserves sources, conditions and counterexamples; smaller is not automatically better.
+- Shared infrastructure does not remove project boundaries or turn echoes into independent evidence.
+- Durable agent-initiated contract changes need a concrete human decision; Anchor
+  changes need substantive conversation. Once authorized, an agent may apply the
+  agreed edit. A current explicit editing request already supplies authority within
+  its scope; an `approved` field alone does not.
+- File version, runtime loading, observed behavior and human experience are distinct claims.
+
+## Working on this repository
+
+For a requested change, inspect relevant sources, make a complete scoped edit and
+run `python3 scripts/validate.py` plus `python3 -m unittest discover -s tests -v`.
+Use `requirements-dev.txt` in an isolated environment if dependencies are absent.
+The gate is offline and read-only; it does not certify external URLs or runtime behavior.
+
+Review the diff, preserve unrelated changes and create a focused local commit for
+an implementation task unless the user requested otherwise. Publish only when the
+current task authorizes it, to the named repository/branch without force. Use the
+client's higher-priority instructions for permissions and execution boundaries.
