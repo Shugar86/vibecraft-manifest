@@ -26,14 +26,28 @@
     },
     "behavior": {
       "type": "object",
-      "description": "Scenario guidance for improvisation, not mandatory stock lines or executable if/else rules. This limited scenario set does not exhaust a persona's choices.",
+      "description": "Scenario guidance for improvisation, not mandatory stock lines or executable if/else rules. Named hooks and optional open-ended scenarios describe intentions; observed behavior needs separate evidence.",
       "additionalProperties": false,
       "properties": {
         "on_tool_success": { "type": "string" },
         "on_tool_no_results": { "type": "string" },
         "on_tool_error": { "type": "string" },
         "on_offtopic": { "type": "string" },
-        "routing_style": { "type": "string", "enum": ["strict", "helpful"], "default": "helpful" }
+        "routing_style": { "type": "string", "enum": ["strict", "helpful"], "default": "helpful" },
+        "scenarios": {
+          "type": "array",
+          "description": "Optional guidance for situations beyond the named hooks. These are authored intentions, not observed VibeCases or an exhaustive decision tree. Their interpretation belongs to the integration.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "situation", "guidance"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1, "description": "An author-maintained identifier, kept stable when wording changes and distinct within this persona. The schema checks its shape, not stability or uniqueness across items." },
+              "situation": { "type": "string", "minLength": 1, "description": "The context in which this guidance may help; not an automatic trigger." },
+              "guidance": { "type": "string", "minLength": 1, "description": "A choice or expressive intention to interpret in context, not a required line." }
+            }
+          }
+        }
       }
     },
     "tools": {

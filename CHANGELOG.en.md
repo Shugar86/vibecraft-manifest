@@ -6,6 +6,44 @@ Format — [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). This is the
 (the documents), not of a separate product. The ladder of the VibeCraft methodology itself (v1.0→v1.4) is
 described in [`docs/en/stack.md`](./docs/en/stack.md).
 
+## [1.2.0] — 2026-09-28
+
+A substantive revision coauthored by the author and AI agents. This number denotes
+the documents; the historical v1.0–v1.4 ladder and v1.2 seed retain separate meanings.
+
+### Added
+
+- `docs/{ru,en}/cases.md`: four complete VibeCases — understanding another,
+  a creative trial, missed sarcasm and coauthoring the working environment. Public
+  adaptations of author-supplied episodes distinguish observations, human assessments,
+  editorial alternatives and neighboring checks that have not yet been performed.
+- Optional `behavior.scenarios` in Persona: authored situations and directions for
+  choice using `id`, `situation`, `guidance`. Aura gains discovery and return scenes;
+  the companion example gains a scene for developing an unfinished thought.
+- An entirely fictional end-to-end example in contracts connects a MorphProposal
+  to an exact diff, human decision, application, loading and observed behavior.
+- Checks for earlier Persona compatibility, new scenarios and unknown fields.
+
+### Changed
+
+- The manifesto treats the next move in a situation as the working unit of character:
+  a reply, trial, action, pause or completion. The agent's contribution can change
+  the idea; its appropriateness depends on context and decisions already made.
+- Interaction, the ladder and six threads connect to VibeCases through conversational
+  action, proportionate initiative, conditions for judgment, bounded lessons and transfer checks.
+- README and machine navigation cover the new material. RU/EN remain semantic mirrors;
+  private primary records are not included in the publication.
+
+### Compatibility and evidence
+
+Earlier Persona objects remain valid under the updated schema. The new `scenarios`
+field requires an updated validator and adapter support; the older strict schema
+rejects it. Other field constraints and both Morph schemas are unchanged.
+
+VibeCases show individual episodes, including a failure and local correction;
+they are not a comparative experiment or proof of lasting model improvement.
+The repository still supplies no runtime, compiler, memory or scheduler.
+
 ## [1.1.0] — 2026-09-05
 
 A conceptual revision following a joint review with an AI agent. The number is

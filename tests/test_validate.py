@@ -1,4 +1,4 @@
-"""Small synthetic repositories exercise the gate independently of prose changes."""
+"""Synthetic repositories exercise the gate; separate fixtures check Persona compatibility."""
 
 import importlib.util
 import json
@@ -138,6 +138,88 @@ class ValidationTests(unittest.TestCase):
         self.schema["properties"]["name"] = {"$ref": "https://example.invalid/absent.json"}
         self.write("schemas/persona.schema.json", json.dumps(self.schema))
         self.assertIn("schema validation failed", self.errors())
+
+
+class PersonaCompatibilityTests(unittest.TestCase):
+    """Check the public Persona format, separately from document-gate fixtures."""
+
+    @classmethod
+    def setUpClass(cls):
+        schema_path = SCRIPT.parents[1] / "schemas/persona.schema.json"
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        cls.validator = VALIDATOR.validator_for(schema)(schema)
+
+    def setUp(self):
+        # A pre-scenarios document: keep this independent of the current examples.
+        self.persona = {
+            "name": "existing-persona",
+            "vibe": {
+                "role": "A conversation partner",
+                "voice": "Clear",
+                "core_emotions": ["curious"],
+                "values": ["Honesty"],
+                "taboos": ["Invented memories"],
+            },
+            "behavior": {
+                "on_tool_success": "Report the result.",
+                "on_tool_no_results": "Report the search scope.",
+                "on_tool_error": "Explain what is known.",
+                "on_offtopic": "Follow the conversation.",
+                "routing_style": "helpful",
+            },
+            "tools": [{"name": "lookup", "type": "search",
+                       "description": "Search supplied material.",
+                       "router_examples": ["Find the source."]}],
+        }
+        self.scenario = {
+            "id": "explore-an-idea",
+            "situation": "A question has several possible meanings.",
+            "guidance": "Offer a useful distinction to explore together.",
+        }
+
+    def test_previous_persona_fields_remain_valid_without_scenarios(self):
+        self.assertEqual(list(self.validator.iter_errors(self.persona)), [])
+
+    def test_scenarios_and_existing_hooks_are_optional(self):
+        for behavior in ({}, {"scenarios": []}):
+            with self.subTest(behavior=behavior):
+                self.persona["behavior"] = behavior
+                self.assertEqual(list(self.validator.iter_errors(self.persona)), [])
+
+    def test_open_ended_scenarios_can_coexist_with_existing_hooks(self):
+        self.persona["behavior"]["scenarios"] = [self.scenario, {
+            "id": "a-new-context",
+            "situation": "An author-defined situation outside the named hooks.",
+            "guidance": "Context-dependent guidance without a predefined tone category.",
+        }]
+        self.assertEqual(list(self.validator.iter_errors(self.persona)), [])
+
+    def test_scenario_requires_all_three_nonempty_strings(self):
+        for field in ("id", "situation", "guidance"):
+            for invalid in (None, "", 42):
+                with self.subTest(field=field, invalid=invalid):
+                    scenario = dict(self.scenario)
+                    if invalid is None:
+                        del scenario[field]
+                    else:
+                        scenario[field] = invalid
+                    self.persona["behavior"]["scenarios"] = [scenario]
+                    self.assertFalse(self.validator.is_valid(self.persona))
+        for invalid in ({}, "scene", ["scene"]):
+            with self.subTest(scenarios=invalid):
+                self.persona["behavior"]["scenarios"] = invalid
+                self.assertFalse(self.validator.is_valid(self.persona))
+
+    def test_scenario_extension_still_rejects_unknown_fields(self):
+        for typo in ("guidence", "observed_result"):
+            with self.subTest(typo=typo):
+                scenario = dict(self.scenario, **{typo: "Unexpected data"})
+                self.persona["behavior"]["scenarios"] = [scenario]
+                errors = list(self.validator.iter_errors(self.persona))
+                self.assertTrue(any(error.validator == "additionalProperties" for error in errors))
+        self.persona["behavior"] = {"scenario": [self.scenario]}
+        errors = list(self.validator.iter_errors(self.persona))
+        self.assertTrue(any(error.validator == "additionalProperties" for error in errors))
 
 
 if __name__ == "__main__":

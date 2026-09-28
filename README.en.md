@@ -3,39 +3,62 @@
 🌐 [Русский](./README.md) · **English**
 
 [![License: CC BY 4.0 + MIT](https://img.shields.io/badge/license-CC_BY_4.0_%2B_MIT-green.svg)](./LICENSE.md)
-[![Docs revision](https://img.shields.io/badge/docs-1.1.0-blue.svg)](./CHANGELOG.en.md)
+[![Docs revision](https://img.shields.io/badge/docs-1.2.0-blue.svg)](./CHANGELOG.en.md)
 
 > **Character through choice. Collaboration through shared thought.**
 > A manifesto about designing the experience of digital products and AI agents —
 > for humans and for agents that also use tools, read instructions and make decisions.
 
-This is an author's philosophy and an engineering orientation, not a framework
-or proof of a machine's “soul.” The metaphor denotes recognizable character and
-continuity of commitments. Start with the [manifesto](./docs/en/manifesto.md).
+Character becomes visible in the next move: develop a thought, make a trial,
+catch the irony, leave room or complete an assignment. VibeCraft connects that
+choice to the design of the product and the conditions of collaboration.
+
+This is an author's philosophy and an engineering orientation. “Soul” is a metaphor
+for recognizability and continuity of commitments. Start with the
+[manifesto](./docs/en/manifesto.md) or [four examined scenes](./docs/en/cases.md).
 
 ## Thesis
 
 The original formula **AI operator = Persona + Skills + Autonomy** helps separate
-character, capabilities and independence. It does not replace data, domain
-competence, verification or real infrastructure.
+ways of participating, capabilities and independence. They operate in an environment:
+actual model capabilities, accessible context, tools and authority.
 
-I am interested in an agent that participates in shaping the idea: offers its own
-thought, develops another's, notices a tension and revises its own move. The human
-need not arrive with a complete specification or continually correct the agent.
+I am interested in an agent that fully participates in shaping the idea: offers its
+own thought, develops another's, notices a tension and revises its own move. Both
+participants change the shared understanding. The human need not arrive with a
+complete specification or remain the permanent referee of the agent's proposals.
 
-Such work needs an environment: an understandable purpose, available decision
-grounds, tools that reveal consequences and recoverable context. Useful initiative
-also happens in conversation; background-action counts do not measure it.
+Useful initiative fits the moment. Sometimes a new distinction is enough;
+sometimes a small working trial is worth bringing. Once direction is chosen,
+the agent completes the assignment. Context and tools should help it choose
+the next step and see its consequences.
 
-A product's character is a consistent pattern of choices. What does it notice?
-How does it develop a successful moment? When does it offer something unexpected,
-and when does it leave room? Form, rhythm, voice and behavior express the vibe
-together — not only the lines spoken after an error.
+In a product, form, rhythm, voice and actions express the same logic. A quiet
+editor protects concentration; a bold coauthor notices a new turn; a tutor
+preserves productive effort for the learner. All need reliability; character
+helps choose among several good moves.
+
+## VibeCases: character in a concrete scene
+
+A VibeCase connects **context and intent → possible moves → observed behavior →
+human assessment → a bounded conclusion**. A neighboring scene tests whether
+the agent can change its move when the situation's meaning changes.
+
+| Scene | What becomes visible |
+|---|---|
+| Understanding another | The agent corrects its own substitution and contributes a thought the person develops |
+| Making a small terrarium | A fitting trial turns an invitation into an accessible activity |
+| Missing sarcasm | A friendly voice can accompany the wrong action; the move changes after correction |
+| Designing an agent's environment | Participants shape the question together, accept a direction and put it into practice |
+
+The [full cases](./docs/en/cases.md) are public adaptations of episodes supplied by
+the author. They distinguish observations, proposed alternatives and checks not yet
+performed. A successful answer in one place does not become a permanent rule about a person.
 
 ## The version ladder — how the vision moved
 
 v1.0–v1.4 form a historical map of expanding questions, **not installed runtime
-versions**. The document revision is **1.1.0**, a separate numbering scheme.
+versions**. The document revision is **1.2.0**, a separate numbering scheme.
 The full [ladder](./docs/en/stack.md) retains the axes and clarifies their limits.
 
 | Stage | What becomes a design concern | Axes |
@@ -49,8 +72,8 @@ The full [ladder](./docs/en/stack.md) retains the axes and clarifies their limit
 
 ## How agents interact
 
-- **With a human:** develop an unfinished thought together. Equality in reasoning
-  does not require identical authority; a tentative idea is not an assignment.
+- **With a human:** develop an unfinished thought and distinguish what the current
+  turn is doing: asking, drawing a conclusion, joking or assigning work.
 - **Across channels:** retain meaningful commitments while adapting form and actions.
   A shared hash identifies an artifact, not equal behavior or confirmed loading.
 - **With other agents:** pass sources, decision reasons and uncertainty. A shared
@@ -68,21 +91,22 @@ See [interaction](./docs/en/interaction.md).
 | Read | Purpose |
 |---|---|
 | [Manifesto](./docs/en/manifesto.md) | Character, independence and a shared idea in the making |
+| [VibeCases](./docs/en/cases.md) | Four complete cases and checks of neighboring situations |
 | [Ladder](./docs/en/stack.md) | The axes' history and possible engineering expressions |
 | [Six threads](./docs/en/threads.md) | Cross-cutting questions about humans, agents, continuity and change |
 | [Interaction](./docs/en/interaction.md) | Shared thought, Sync, Social and learning from experience |
-| [Contracts](./docs/en/contracts.md) | The limits of Persona, Morph and Reflection formats |
+| [Contracts](./docs/en/contracts.md) | Persona scenarios and the path from a Morph proposal to checking behavior |
 | [JSON Schema](./schemas/) | Persona, MorphEvent and MorphProposal structures; not a runtime |
-| [Current Aura example](./examples/aura.en.json) · [RU](./examples/aura.ru.json) | A minimal persona compatible with the current schema |
+| [Current Aura example](./examples/aura.en.json) · [RU](./examples/aura.ru.json) | A persona with contextual scenarios for discovery and return |
 
-**Included:** bilingual documents, three JSON schemas, examples and validation.
+**Included:** bilingual documents and VibeCases, three JSON schemas, examples and validation.
 **Not implemented here:** PromptCompiler, memory backend, scheduler, automatic
 Morph, inter-agent transport and client integrations. A format does not create a capability.
 
 ## For humans and for machines
 
 Read for the question at hand, not necessarily the whole corpus in order. For
-intent, use the manifesto; for a format, contracts; for continuity, interaction.
+intent, use the manifesto; for a scene, VibeCases; for a format, contracts; for continuity, interaction.
 [AGENTS.md](./AGENTS.md) provides agent navigation and repository-work conventions.
 
 Validation (Python 3.10+; dependencies are only for document development):
@@ -126,5 +150,8 @@ format. They are not current policy, a verified runtime or examples of today's
 
 Dual — [LICENSE.md](./LICENSE.md): text is CC BY 4.0; code and configurations are MIT.
 Attribution is retained; revision history is in [CHANGELOG.en.md](./CHANGELOG.en.md).
+
+Original vision by Alexander Zakharchenko. The text develops in coauthorship with
+AI agents: they propose distinctions, challenge decisions and participate in revision.
 
 © 2025–2026 Alexander Zakharchenko · R&D Holding "Zakharchenko" ([Shugar86](https://github.com/Shugar86)).

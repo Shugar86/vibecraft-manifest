@@ -21,6 +21,7 @@ Start from the missing question; a complete reading sequence is not a prerequisi
 - `docs/<lang>/stack.md`: historical v1.0–v1.4 axes and possible engineering forms.
 - `docs/<lang>/threads.md`: six cross-cutting questions across those stages.
 - `docs/<lang>/interaction.md`: human/agent collaboration, continuity, sharing and learning.
+- `docs/<lang>/cases.md`: four examined episodes, alternative moves and neighboring checks.
 - `docs/<lang>/contracts.md`: format boundaries and schema-compatible examples.
 
 `<lang>` is `ru` (primary) or `en`; maintained documents are full semantic mirrors.
@@ -33,6 +34,10 @@ as history; a visible status note may point to the maintained documents.
 `schemas/` contains JSON Schema draft 2020-12 for Persona, MorphEvent and
 MorphProposal. `ReflectionPass` is illustrative and has no schema here.
 A schema validates structure, not permissions, client loading, behavior or learning.
+Persona's optional `behavior.scenarios` describes authored situations and guidance;
+these intentions are distinct from a VibeCase recording observed behavior and feedback.
+Older Persona objects remain valid. Consumers of `scenarios` need the updated schema
+and a capable adapter; do not assume older clients will load or apply the new field.
 `examples/aura.ru.json` and `examples/aura.en.json` use the current Persona schema.
 Neither a tool declaration nor a schedule in a legacy example creates a capability.
 
@@ -45,12 +50,17 @@ Neither a tool declaration nor a schedule in a legacy example creates a capabili
 - Use relative local links and a top-of-document RU↔EN language link.
 - Update the matching language, navigation and examples when changing meaning.
 - Preserve attribution, licenses and historical records. Do not add private context.
+- Keep public cases anonymized. Label edited/translated dialogue and distinguish
+  verified episodes, participant reports, proposed alternatives and synthetic probes.
+  Private source links, local paths and conversation IDs belong outside this repository.
 - Match specificity to the problem: no new mandatory persona questionnaire,
   novelty ritual or duplicated runtime policy merely to make the text look complete.
 
 ## Invariants worth honoring
 
 - Character is expressed through choices, including ordinary success and discovery.
+- The next move depends on the conversation's meaning: a question, tease, exploration
+  and assignment may use similar words. Tone alone does not establish a fitting choice.
 - Humans and agents can develop the question together; discussion is not an assignment.
 - Experience may revise understanding without creating a new rule or memory record.
 - Consolidation preserves sources, conditions and counterexamples; smaller is not automatically better.
@@ -60,6 +70,8 @@ Neither a tool declaration nor a schedule in a legacy example creates a capabili
   agreed edit. A current explicit editing request already supplies authority within
   its scope; an `approved` field alone does not.
 - File version, runtime loading, observed behavior and human experience are distinct claims.
+- Pair a useful lesson with a neighboring situation where the move should change.
+  Local correction and acceptance of a direction do not prove lasting improvement.
 
 ## Working on this repository
 

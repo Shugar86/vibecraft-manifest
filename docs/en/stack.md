@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — The Version Ladder
 lang: en
-version: "1.1.0"
+version: "1.2.0"
 layer: philosophy + engineering
 ---
 
@@ -12,7 +12,7 @@ layer: philosophy + engineering
 > The ladder is a historical map of how VibeCraft's intent expanded, not releases of an installed
 > framework or a required implementation sequence. Frontmatter `version` identifies the document
 > revision. Each axis explores **why** and a possible **🔧 how**.
-> The whole vision — [`manifesto.md`](./manifesto.md).
+> The whole vision — [manifesto](./manifesto.md); analyses of concrete scenes — [VibeCases](./cases.md).
 
 ```
 v1.0   Foundation  emotion is architecture      VibeSpark · VibeCore
@@ -36,6 +36,10 @@ pauses, and what invites continuation. Color, rhythm, density, and movement part
 the logic of action. Character is more than the absence of friction: a workshop may invite
 exploration, an editor protect concentration, a partner notice a connection not yet fully formed.
 
+**The working unit of character is the next move in a situation:** a reply, action, draft or pause.
+Voice makes that move recognizable; the product's design determines what it enables.
+For example, a good result can be celebrated, developed further or quietly left with the person.
+
 - **VibeSpark** — why the experience is worth creating; what action, understanding, or feeling it enables.
 - **VibeCore** — a recognizable logic of choice from which concrete decisions follow. For example,
   "an unfinished thought is already something we can work on together here." A vibe token can give
@@ -45,16 +49,20 @@ exploration, an editor protect concentration, a partner notice a connection not 
 
 ## v1.1 — Character: "emotion is data"
 
-Part of the intent can move from an incidental prompt formulation into an explicit, versioned contract.
-But a file describes character rather than guarantees it: character becomes discernible through choices.
+An explicit, versioned contract preserves part of the intent and makes it easier to discuss.
+Both the written direction and its grounds matter: what to notice, what to leave room for,
+which possibility to open. The actual choice is checked in use.
 
 - **VibePersona** — a position and room for improvisation: what matters, what the persona notices,
   which role it occupies, how it sounds, and which commitments it preserves.
-- **VibeBehavior** — how it develops a thought, offers a move after success, leaves initiative to
-  the human, handles difficulty, and revises a mistake. Jazz rules, not a catalogue of lines.
-- **VibeCases** — scenes that distinguish the intent from a generic wrapper: a successful move,
-  discovery, repeated use, a relevant difficulty. Observable results and human feeling are different
-  kinds of evidence; automated tone assessment substitutes for neither.
+- **VibeBehavior** — choosing in response to what is happening: developing a tentative thought,
+  joining a teasing exchange, celebrating success, carrying out an accepted decision. A question
+  can perform different actions in a conversation; context helps choose the move. Jazz rules
+  guide judgment and improvisation.
+- **VibeCases** — analyzing a scene through possible moves, observed behavior, the person's assessment
+  and a conclusion with limits. A neighboring case calls for a different move: for example,
+  a serious question alongside a sarcastic one. Discovery, ordinary success, return and difficulty
+  offer different tests of character. [Four analyses](./cases.md) demonstrate this approach.
 
 ### 🔧 Engineering
 
@@ -63,16 +71,23 @@ The existing [JSON Schemas](./contracts.md) help validate data structure, not th
 collaboration. `PromptCompiler` names a possible adapter, not a function shipped here.
 It may assemble fields, explanations, and examples for a client; benefits for a particular model need testing.
 
-Structure is not opposed to prose: a machine format makes fields precise, a short rationale supports
-judgment, and an example shows the difference. Existing context is enough for a small edit;
-a new persona questionnaire or manifesto is not required.
+The current Persona's optional `behavior.scenarios` describes situations beyond the named `on_*`
+responses. An entry with `id`, `situation` and `guidance` preserves authored intent; observed behavior
+and human assessment belong to a separate VibeCase. Existing objects without this field remain valid.
+Objects using it need the updated schema and adapter support; validation against the old schema
+with `additionalProperties: false` rejects them. See [contracts](./contracts.md) for details.
+
+A machine format makes fields precise, a short rationale supports judgment, and a scene shows
+the difference. A small edit needs only the context relevant to it. A full analysis belongs where
+it helps choose or check behavior, rather than becoming a required questionnaire before every task.
 
 ---
 
 ## v1.1.1 — Operations: "emotion is operation"
 
-For the promises of character to survive a second session, the environment must help work continue,
-make tool responses intelligible, and recover the reasons behind decisions.
+The environment makes judgment possible: it helps find material context, understand a tool response
+and recover the grounds for decisions. In a second session, this lets a useful discovery be developed;
+in a new situation, it helps choose a move without gathering known information all over again.
 
 - **VibeFlow** — context available as needed, sources, and distinguishable task state.
 - **VibeFix** — diagnostics explaining an error's effect and recovery path, format checks,
@@ -122,7 +137,8 @@ the same commitments.
 - **MorphPolicy** — who decides, what gets checked, and how a change is applied and recovered.
   Anchor changes require substantive conversation and an explicit human decision; Surface changes
   stay within authorized scope following a human decision. An agent may apply an approved diff,
-  not merely propose it. An artifact saying `approved` does not itself create authority.
+  not merely propose it. The current assignment may already contain that decision; no separate
+  ceremony is then needed. An artifact saying `approved` does not itself create authority.
 - **MorphHistory** preserves reasons and consequences. **MorphExperiment** compares meaningful
   scenes and allows the original intent to be wrong; the number of edits does not measure development.
 
@@ -134,10 +150,15 @@ Full prompts for different clients may reasonably differ.
 
 ### VibePulse — proactivity
 
-Initiative may be a useful connection within a discussion, a proposed next experience, or authorized
-monitoring. It does not require constant novelty: sometimes the best move is leaving space for the
-human. Background action needs a working scheduler, a specified task, and authority.
-`PulsePolicy` may define quiet hours, cooldowns, and urgency criteria; "urgent" does not override boundaries.
+Initiative may be a useful connection within a discussion, a small separate probe or authorized
+monitoring. Its scale depends on interest, the cost of error, established boundaries and the ability
+to set the probe aside. A tangible result may open a new activity; a pause may leave room for
+the person's next thought. Neither requires constant novelty.
+
+An invitation to try something does not establish permission for spending or publication.
+An accepted assignment allows work to continue within its boundaries. Background action needs
+a working scheduler, a specified task and authority. `PulsePolicy` may define quiet hours,
+cooldowns and urgency criteria; "urgent" does not override boundaries.
 
 ### VibeGuard — the immune system
 
@@ -159,13 +180,15 @@ the number of agents or their agreement, but stronger shared understanding and a
 
 - **VibeSocial** — explicit roles, addressing, provenance, and access to needed context.
   `knows / trusts / defers_to` describe relationships, not wider permissions. A technical dispute can
-  be resolved through a check; a human priority through clarification. → [interaction.md](./interaction.md#shared-memory-shared-edits)
+  be resolved through a check; a human priority through clarification. Several retellings of one
+  source retain a single basis. → [interaction.md](./interaction.md#shared-memory-shared-edits)
 - **VibeLearn** — `experience → revised understanding → useful next move`. That may be a new
   question, a check, a tool repair, knowledge saved to authorized memory, or a MorphProposal.
   The last is for a justified durable contract change, not for every lesson.
 - **VibeForge** — reusing tested parts of a persona while preserving authorial intent.
-  Templates and interviews are possible means, not a promise of a finished character in a fixed time.
-  A new persona is tested in its own scenes, not merely by whether its fields are filled.
+  A template may preserve a useful logic of choice while a new scene reveals a different expression.
+  For example, what will this editor notice in a good draft, and how will it help develop that finding?
+  This tests the new persona's own character; filled fields alone are insufficient.
 - **VibeScale** — visibility into versions, access, costs, result quality, and unfinished operations.
   Shared memory retains access boundaries; publishing a record does not mean everyone read and checked it.
   Fleet policy needs a verified signal and an authorized mechanism, not a single magical score.
@@ -174,9 +197,10 @@ the number of agents or their agreement, but stronger shared understanding and a
 
 ## v1.4 — Reflection: "emotion is reflection"
 
-Between "notice" and "change," **make sense** of what happened and which explanation survives the
-evidence. A correction may concern one episode, the environment, one's own conclusion, or a rule;
-these are not the same change.
+Making sense of experience helps reveal what to preserve and what to reconsider. A successful
+improvisation can expose a possibility absent from the original intent; a miss can show where
+the agent answered a neighboring question. Look for the cause in the particular episode,
+the environment, the agent's own conclusion or a durable rule.
 
 - **VibeReflect** — a "dream" as a metaphor for a separate pass over available experience.
   Self / User / Env are perspectives: the agent's decisions, what the human explicitly said, and
@@ -186,10 +210,12 @@ these are not the same change.
   when it loses a source or counterexample. No MorphProposal does not mean no lesson.
 
 The triad **Reflect → Learn → Morph** names one branch: make sense → revise understanding → change
-the contract if needed under an accepted decision. Without checking subsequent behavior, a written
-conclusion cannot establish durable learning. More in
-[interaction.md](./interaction.md#the-self-learning-loop) and [contracts.md](./contracts.md).
+the contract if needed under an accepted decision. A repaired answer after an explicit correction
+is observable now. Durable learning needs later relevant episodes, including a neighboring case
+under different conditions. The agent's account of what it understood cannot replace that check.
+More in [VibeCases](./cases.md), [interaction.md](./interaction.md#the-self-learning-loop)
+and [contracts.md](./contracts.md).
 
 ---
 
-[← manifesto](./manifesto.md) · [interaction →](./interaction.md) · [contracts →](./contracts.md)
+[← manifesto](./manifesto.md) · [VibeCases →](./cases.md) · [interaction →](./interaction.md) · [contracts →](./contracts.md)

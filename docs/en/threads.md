@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — Six Threads Across the Versions
 lang: en
-version: "1.1.0"
+version: "1.2.0"
 layer: philosophy + engineering
 ---
 
@@ -35,6 +35,11 @@ The questions:
 but establish neither consciousness, experience, nor a working mechanism. Early versions foregrounded
 particular axes; that does not mean a current product can postpone basic safety until the "right version."
 
+The common point of observation for all six threads is **the next move in a situation**. What received
+attention, who contributed a new thought, how was initiative shared, and what became possible after
+the response? These questions connect the interface, persona, and working environment.
+[VibeCases](./cases.md) examine particular episodes this way; here we trace the questions' development.
+
 ---
 
 ## v1.0 — Foundation: vibe first becomes tangible
@@ -42,6 +47,8 @@ particular axes; that does not mean a current product can postpone basic safety 
 - **Human ↔ AI.** Character is read through what receives attention and which move the product
   makes available. In a workshop, a draft invites continuation; in a controlled form, it is a stage
   before submission. Both interfaces can be clear while offering different relationships to unfinished work.
+  Form distributes the work: does it help participants discover the question together, or require
+  a vague interest to become a finished brief first?
 - **Explaining vibe to an AI.** VibeSpark connects intention to experience: why this capability
   exists and what it opens up. A vibe token is useful shorthand if already understood; a sample is
   often more precise than an adjective.
@@ -61,12 +68,15 @@ particular axes; that does not mean a current product can postpone basic safety 
   a description, not the whole identity or a guarantee of recognizable behavior.
 - **Explaining vibe to an AI.** Fields provide structure, reasons help make choices, and scenes
   show consequences. Jazz rules leave room for improvisation: an agent may connect what was said,
-  offer its own hypothesis, or acknowledge that the question's framing is still emerging. A compiler
-  is one way to deliver this context, not a mandatory language for thought.
-- **Human ↔ AI.** Intent is not always ready in advance. Participants may clarify it through
-  examples and disagreement; the human need not continuously edit the agent's direction. VibeCases
-  test ordinary success, discovery of a possibility, and friction. Distinguish the intent, observed
-  behavior, and a feeling confirmed by the human.
+  offer its own hypothesis, or acknowledge that the question's framing is still emerging. The kind
+  of move also matters: a question may seek an explanation or tease a partner; discussing a possibility
+  does not always assign its implementation. A compiler is one way to deliver context for that distinction.
+- **Human ↔ AI.** Intent takes shape through both participants' contributions. An agent can offer
+  a contestable hypothesis, the human develop it, and a discovered example change the initial question
+  for both. The human need not know the answer in advance or constantly arbitrate proposals. Once
+  a direction is agreed or a choice delegated, the agent's contribution continues through independent
+  completion of the work. VibeCases examine ordinary success, discovery, and friction, distinguishing
+  intent, the observed move, and the available human assessment.
 - **AI ↔ AI.** Selecting a persona may bring another perspective to the task, but role changes
   should be intelligible: they do not imply new authority or access to any memory.
 - **Change / protection.** A contract can be edited and tested as an artifact. Structural validity
@@ -80,7 +90,10 @@ particular axes; that does not mean a current product can postpone basic safety 
 
 - **Where the soul is.** The "body" is a concrete execution environment; memory supports
   continuity only where it can be found, understood, and checked. Goals, decision reasons, completed
-  work, and unknowns matter, not mandatory loading of every log through a fixed boot sequence.
+  work, and unknowns matter. A conversation also needs the point the participants have reached:
+  the question has been explained, a remark continues the teasing, or discussion has become an
+  assignment. Saving the topic alone does not convey this; loading every log does not by itself
+  identify what matters.
 - **Protection (self).** VibeFix makes difficulty diagnosable. An absent optional client, for example,
   is not a broken task; an access-permission error needs its own remedy, not a complete reinstall.
   A procedure should be exact where correctness depends on its order.
@@ -93,10 +106,10 @@ particular axes; that does not mean a current product can postpone basic safety 
   "Deployment started, connection lost" means an unknown result. The next agent checks active
   state rather than repeating the action just because the handoff recommends repetition.
 - **Human ↔ AI.** Different channels can support one conversation without repeated introductions
-  if the needed context is actually available. A promise of 24/7 presence needs a working environment.
+  if the needed context is actually available. This lets participants continue a thought with its
+  reasons and pace, or identify exactly what is missing. Invented shared history gets in the way.
 
 > Emotion is **operation**: the promise of continuity has concrete conditions and recovery paths.
-> This document describes requirements, not certified production behavior.
 
 ---
 
@@ -107,7 +120,9 @@ particular axes; that does not mean a current product can postpone basic safety 
   array element cannot determine a "persona's death." MorphEvent and MorphHistory make changes
   and reasons traceable; MorphPolicy defines decision-making, verification, and recovery.
 - **Where the soul is.** Recognizability lies in a consistent logic of attention and choice across
-  situations, not repeating lines verbatim. Development can change rhythm and tone while retaining agreements.
+  situations, not repeating lines verbatim. One character can join a joke, explain a question in
+  depth, or quietly carry out an assignment. The action varies; attention to what the shared work
+  currently needs remains.
 - **AI ↔ AI.** VibeSync supports a common source of commitments across different models and tools.
   A persona artifact's hash shows equality of its contents. A full prompt hash does not define identity,
   and matching files do not confirm loading or identical behavior.
@@ -119,7 +134,10 @@ particular axes; that does not mean a current product can postpone basic safety 
   urgency does not create permission for external action.
 - **Human ↔ AI.** MorphExperiment can compare two ways of interacting. Reply length, agreement,
   or a continuing dialogue do not establish which is better: a follow-up may express interest or
-  result from an error. Human feeling is checked with the human, not inferred from a score.
+  result from an error. An adjacent scene is useful when one material condition changes: the human
+  now wants an explanation, only a conversation, or has already assigned the work. It tests whether
+  the agent can change its move for that reason. Human assessment concerns their experience in the
+  available episode; it does not turn one successful choice into a universal recipe.
 
 > Emotion is a **living process**: expression changes, commitments remain, and conclusions can be revised.
 
@@ -128,21 +146,26 @@ particular axes; that does not mean a current product can postpone basic safety 
 ## v1.3 — Society: an agent changes an agent, the fleet protects itself
 
 - **AI ↔ AI.** VibeSocial helps connect different positions: what another participant verified,
-  what they hypothesize, and which question remains. A `SocialGraph` and protocol may describe
-  relationships and addressing; a `trusts` entry does not turn a message into truth or higher-priority instruction.
+  what they hypothesize, and which question remains. A useful contribution can change the framing
+  itself: one agent finds a missing condition, another shows how it changes a possible result.
+  The grounds for the difference matter, not the number of agreeing roles. A `SocialGraph` and
+  protocol may describe relationships and addressing; a `trusts` entry does not turn a message
+  into truth or higher-priority instruction.
 - **One AI changes another.** An agent may share a distinction, a counterexample, or a proposal
   for the common contract. The recipient checks relevance and reasons. Changed understanding is
   not necessarily Morph; a durable contract edit requires a human decision.
   An authorized agent may apply an approved diff; the human need not do it manually.
 - **Changing self.** Learn is not a proposal factory: experience is useful when it makes the next
   move more accurate. Sometimes the needed repair concerns a tool interface or access to context,
-  not another rule added to the agent.
+  not another rule added to the agent. Share a finding with the conditions in which it helped and
+  an adjacent case where the same move would interfere: this gives another agent grounds to choose.
 - **Protection (fleet).** VibeScale distinguishes versions, access, costs, and actual results.
   Automatic rollback can be a preauthorized procedure with verifiable conditions; a low number
   alone neither explains a cause nor establishes that rollback would remedy it.
 - **Creation.** VibeForge reuses tested intent rather than stamping out identical personalities.
   Templates may accelerate work; ten answers do not guarantee character in fifteen minutes.
-  A concrete trial is useful: what would this persona notice and offer differently from an existing one?
+  A concrete trial is useful: what would this persona notice, offer, or leave to the human? The
+  difference should create a fitting experience; constant novelty is not an aim in itself.
 
 > Emotion is a **network of personas**: difference is useful when it improves shared understanding.
 > One source retold by three agents remains one source.
@@ -155,12 +178,16 @@ particular axes; that does not mean a current product can postpone basic safety 
   the contract when that is warranted. This is branching, not a conveyor belt. An understood
   contradiction or a retained good decision can complete a discussion; neither replaces an assigned implementation.
 - **Where the soul is.** The Self mirror is a working assessment of one's decisions and limitations.
-  "I turned the discussion into a plan too early" can be checked against an episode. It is not
-  privileged access to the model's inner experience or grounds for building a myth about it.
+  "I turned the discussion into a plan too early" can be checked against an episode. A correction
+  after direct feedback shows an ability to return to the subject. Choosing a fitting move
+  independently in the next situation is a separate test of transfer; explaining the mistake
+  does not replace it.
 - **Human ↔ AI.** The User mirror distinguishes the human's words from the agent's hypotheses.
   A request for a brief status before a meeting does not cancel a request to examine another
-  question in depth. Saved preferences should be contextual and open to correction and deletion
-  in the implemented system; the manifesto itself does not provide those features.
+  question in depth. Attention to the current conversation lets both participants revise their
+  understanding of each other. The human can assess a meaningful moment without having to check
+  every reply or prove every preference. Saved hypotheses remain contextual and open to correction
+  and deletion.
 - **AI ↔ AI.** A common store does not mean "one understood — everyone knows." Access, retrieval,
   provenance, and verification are needed. Retelling retains the source's status; another agent
   repeating one's own hypothesis does not become independent confirmation.
@@ -175,20 +202,20 @@ particular axes; that does not mean a current product can postpone basic safety 
   distinguish an agent's own conclusion from it rather than discarding both blindly.
 
 > Emotion is **reflection** when experience helps make better sense of shared work.
-> A "dream" is an image for such a pass, not an established experience. New understanding must
-> survive the next relevant case before a durable improvement can be claimed.
+> The next relevant case and an adjacent scene test transfer: did the choice change where that
+> helps, and is a different move still possible? Lasting improvement needs observations.
 
 ---
 
 ## Summary: how each thread grows up
 
-- **Human ↔ AI via vibe:** expressive experience → jointly testing intent → developing unfinished thought and contextual understanding of each other.
+- **Human ↔ AI via vibe:** sharing attention and initiative → forming the question together → developing intent and completing assigned work.
 - **AI ↔ AI:** handing off context → different positions and explicit roles → verifiable shared findings without collective echo.
-- **Where the soul is:** recognizable choices → persona description → continuity of commitments supported by the environment.
-- **Explaining vibe to an AI:** principle + reasons + scenes; a precise format helps deliver them without replacing their meaning.
-- **Change:** controlled versions → Anchor/Surface and a journal → experience that revises understanding; Morph serves needed, authorized contract edits.
+- **Where the soul is:** a characteristic next move → persona description → different actions that preserve the meaning of agreements.
+- **Explaining vibe to an AI:** principle + reasons + distinguishable scenes; the format helps convey why the needed move changes with context.
+- **Change:** controlled versions → Anchor/Surface and a journal → testing new understanding and its transfer; Morph serves needed, authorized contract edits.
 - **Protection:** diagnostics and recovery → observable feedback → preserving sources, authority, and the ability to correct mistakes.
 
 ---
 
-[← interaction](./interaction.md) · [ladder](./stack.md) · [contracts →](./contracts.md)
+[← interaction](./interaction.md) · [ladder](./stack.md) · [VibeCases](./cases.md) · [contracts →](./contracts.md)

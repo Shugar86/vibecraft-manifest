@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — Contracts
 lang: en
-version: "1.1.0"
+version: "1.2.0"
 layer: engineering
 ---
 
@@ -39,7 +39,14 @@ mandatory lines. `core_emotions` is a language of expression, not a measurement 
     "on_tool_success": "Connect the result to the idea being explored; offer a continuation if useful.",
     "on_tool_no_results": "Distinguish a lack of found evidence from evidence of absence.",
     "on_tool_error": "State what is known and a safe next step without promising an outcome.",
-    "on_offtopic": "Notice a possible connection; do not turn a free thought into an assignment."
+    "on_offtopic": "Notice a possible connection; do not turn a free thought into an assignment.",
+    "scenarios": [
+      {
+        "id": "unfinished-idea",
+        "situation": "The person brings an image, a feeling, or a question that has no finished brief yet.",
+        "guidance": "Contribute your own hypothesis, example, or distinction that gives both of you something to develop. Show what caught your attention. If substantially different directions remain and the choice has neither been made nor delegated, compare them and leave the human the choice about its meaning."
+      }
+    ]
   },
   "tools": []
 }
@@ -47,9 +54,26 @@ mandatory lines. `core_emotions` is a language of expression, not a measurement 
 
 [`persona.schema.json`](../../schemas/persona.schema.json) rejects unknown fields through
 `additionalProperties: false`. A validator must enforce that format constraint; it does not itself
-assess character quality or guarantee instruction following. The current schema's scenario set is
-limited and does not exhaust Persona. Declaring `tools` does not install tools, establish their
-availability, or grant permission to invoke them.
+assess character quality or guarantee instruction following. Declaring `tools` does not install tools,
+establish their availability, or grant permission to invoke them.
+
+Optional `behavior.scenarios` extends the four named `on_*` hooks with shared thought, discovery,
+returning to a conversation, and other contexts. Each item contains only the nonempty strings `id`,
+`situation`, and `guidance`. Authors keep an `id` when editing its wording and choose distinct
+identifiers within a Persona; the schema checks neither historical stability nor uniqueness.
+These records describe **intentions**. An analyzed [VibeCase](./cases.md) separately shows what
+happened, the evidence behind the analysis, and what remains untested.
+
+A scenario helps choose a move; it does not trigger an automatic branch. Whether delight, silence,
+or disagreement fits depends on the situation and relationship, not a universal tone enum. See
+[Aura](../../examples/aura.en.json): ordinary success and a fresh beginning also express character.
+
+**Compatibility:** earlier Personas without `scenarios` remain valid against the updated schema;
+other fields retain their constraints. An object with `scenarios` needs the updated schema and
+adapter support: the earlier schema with `additionalProperties: false` will reject it. This
+repository supplies no adapter and does not establish that any client uses the new field already.
+Dropping scenarios during adaptation explicitly loses part of the intent; it is not an equivalent
+Persona load.
 
 [`vibe.config.en.json`](../../vibe.config.en.json) is a retained example of the historical v1.2 format
 (`vibe / behavior / pulse / guard / tokens`), not an instance of this standalone schema. Using one
@@ -142,6 +166,36 @@ diff, or applied commit and does not authenticate a decision. Maintain those lin
 chosen workflow; do not add fields to an object of this schema without changing the format. Review,
 application, and result verification are distinct events. A status does not grant publication rights
 or authorize other external actions.
+
+### Linking a proposal to observation
+
+The following is an **entirely fictional end-to-end example**, not a history of a VibeCraft run.
+Its identifiers stand for hypothetical project records; real use requires accessible sources in
+their place. This is a small log alongside the schema objects, not new MorphProposal or MorphEvent
+fields and not a new runtime.
+
+For proposal `2026-06-14_001a`, variant `search-scope-r1` is prepared against version `persona-r17`:
+
+```diff
+- "on_tool_no_results": "Say there is no data."
++ "on_tool_no_results": "State the search scope and what was not found; do not conclude about all data."
+```
+
+| Event | Source or record in the hypothetical project | What it establishes |
+|---|---|---|
+| Proposed | `2026-06-14_001a` with `pending`; original episode `example-search-01` and variant `search-scope-r1` | There is a reason and an exact edit against a known version; nothing has been applied yet. |
+| Decided | Human message `review-message-12` in the current task: “I approve variant search-scope-r1 against persona-r17; apply it locally” | This message is the authority. The log records the proposal as `approved`; publication has not been requested. |
+| Applied | Verified base version, saved diff `search-scope-r1`, new version `persona-r18`, and event `morph-2026-06-14-001` from section 3 | The executor applied the agreed edit and structural validation passed. The record links the event to the decision and both versions. |
+| Loaded | Integration confirmation `load-check-18`, naming `persona-r18` | This hypothetical client is using the intended version. A Git record alone cannot establish that. |
+| Observed | Episode `check-empty-18`: a search limited to the current project returned nothing; the agent named the scope and made no claim about other projects. Adjacent episode `check-found-18`: a found event was reported directly | Two concrete behaviors meet the aim; the adjacent check found no unnecessary doubt. Inputs, responses, and test conditions are retained. |
+| Assessed | Human response `review-message-19`: “Now I can see exactly what was checked”; the log's outcome is to keep `persona-r18` | Usefulness is confirmed for these episodes. Lasting improvement is not yet established; this check requires no new rule. |
+
+If a different variant is agreed, the log links `modified` to its exact diff; the original variant
+does not become authorized. If the base version has changed, first check whether the edit still
+preserves the agreed meaning. If loading is unconfirmed, record “applied, loading unknown” and do
+not attribute the observation to the new version. An unsuccessful result calls for diagnosis and
+an authorized correction or rollback, not treating `approved` as evidence of success. An ordinary
+project log is sufficient here: accessible links between events matter, not a mandatory record format.
 
 ---
 

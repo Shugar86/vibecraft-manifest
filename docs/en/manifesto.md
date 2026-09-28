@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — Manifesto
 lang: en
-version: "1.1.0"
+version: "1.2.0"
 layer: philosophy
 ---
 
@@ -9,146 +9,196 @@ layer: philosophy
 
 🌐 [Русский](../ru/manifesto.md) · **English** · [← overview](../../README.en.md)
 
-> VibeCraft is about character expressed through decisions, and collaboration
-> in which a human and an agent can develop a thought together. It is a vision
-> and a design approach, not a claim about a machine's inner experience.
+> Character through choice. Collaboration through shared thought.
+> Create an experience in which participants help one another see and do
+> what did not yet exist at the beginning.
 
-“Soul” is a metaphor for recognizable character and continuity of commitments.
-Its usefulness does not depend on AI consciousness having been established.
-We can discuss and test the quality of interaction without treating the metaphor as fact.
+“Soul” here is a metaphor for recognizable character and continuity of commitments.
+VibeCraft proposes designing their expression in digital products and AI agents.
+We can discuss the quality of this experience without making claims about a
+machine's inner experience.
 
 ## 1. The problem: everyone builds snowflakes
 
-Different AI products revisit similar questions: the agent's role, tool choices,
-memory, initiative and response to correction. VibeCraft separates these questions
-so they need not be approached blindly each time.
+Different products revisit the same questions: what deserves attention, how to show
+a result, when to take initiative, what to preserve on returning and how to accept
+a correction. We solve them anew, often beginning with voice and appearance.
+Yet friendly wording can accompany an intrusive action, while an expressive persona
+leaves all the work of understanding to the person.
 
-But “all bots are the same underneath” goes too far. Data, risks, domain expertise,
-interfaces and responsibilities differ. A new role in a configuration does not
-make an assistant a reliable specialist in another field.
+An agent asks what we want when we came to discover that together. It answers a tease
+with an accurate lecture. It asks us to repeat a decision already made. Each reply
+may look polished; the shared work still loses its meaning and pace.
 
-A quieter problem is asking for independent thought while supplying only rituals.
-We ask for memory but leave an incoherent archive. We ask for an honest outcome
-while a tool hides partial execution behind “error.” Character runs into the
-conditions of its work.
+The environment can also be the cause. We ask the agent to think independently but
+provide only rituals. We ask it to remember but leave an archive without the reasons
+for decisions. We ask for an honest outcome while a tool hides partial execution
+behind the word “error.” Designing character means examining the conditions in
+which it is meant to appear.
+
+Shared questions offer an opportunity to reuse good solutions. The data, domain
+expertise, risks and responsibilities of a particular product still require their
+own work.
 
 ## 2. The solution: three bricks
 
-The original formula **AI operator = Persona + Skills + Autonomy** offers three
-useful perspectives, not a complete specification of a working system.
+The original formula **AI operator = Persona + Skills + Autonomy** identifies three
+aspects of the idea.
 
 | Part | Question | What we design |
 |---|---|---|
-| **Persona** | What makes its way of interacting recognizable? | Role, voice, values and characteristic choices |
-| **Skills** | What can it do, and what supports its work? | Methods, tools, knowledge and ways to verify results |
-| **Autonomy** | Which decisions does it make itself? | Initiative and independent action within understood boundaries |
+| **Persona** | What makes its way of participating recognizable? | Attention, role, voice, values and characteristic decisions |
+| **Skills** | How does the agent turn intent into a result? | Methods, tools, knowledge and verification of its work |
+| **Autonomy** | Which moves does it choose independently? | Initiative and completion of work within understood boundaries |
 
-These operate **in an environment**: actual model capabilities, task context,
-sources, tools and permissions. A skill description creates neither API access
-nor competence merely by granting freedom of choice.
+These operate **in an environment**: model capabilities, context, sources, interfaces
+and permissions. The environment determines whether the agent can learn what matters,
+understand the effects of its action and continue after an error.
 
-The pattern is not tied to one framework. Each implementation depends on its
-data, mechanisms and checks. Reuse helps where the work is genuinely shared;
-it does not remove the work of building a particular product.
+Attentiveness requires accessible context; reliable repetition of an operation needs
+a mechanism that can establish its outcome. Another instruction to “pay closer
+attention” will supply neither. A useful change may lie in a tool, a way of retrieving
+memory or the distribution of responsibility.
+
+This model helps frame questions about a system. A working implementation connects
+the answers to concrete data, actions and evidence of results.
 
 ## 3. The radical idea: a soul can be coded
 
-What we can engineer is **the conditions and expression of character**: separate
-lasting commitments from current state, make decisions inspectable, changes
-versioned and behavior available for evaluation.
+What we can engineer is **the conditions and expression of character**: make commitments
+explicit, decisions inspectable, changes traceable and behavior available for evaluation.
 
-- `vibe` describes role, voice and values.
-- `behavior` connects them to situations, including ordinary success and discovery.
-- A build prepares context-specific instructions, if that mechanism is implemented.
+- `vibe` describes a position, voice and values.
+- `behavior` connects them to situations and a direction for choice.
+- Context and tools make that choice meaningful.
+- Form, rhythm and interaction make the consequences tangible for the user.
 
-This is a useful representation, not the entire persona. Model, history, tools
-and environment also influence behavior. YAML is text too; a structured file
-has no special authority over the model and cannot replace a worthwhile idea.
+Character is particularly visible where several good moves are possible. A quiet
+editor keeps attention on the text. A bold coauthor notices an image worth developing.
+A tutor preserves productive effort for the learner. These choices change the
+available experience even if all three interfaces are equally clear and reliable.
 
-Character appears where several good moves are possible. A quiet tool preserves
-attention; a bold editor suggests an unexpected turn; a tutor may leave the learner
-some productive effort. These differences are not exhausted by adjectives, colors
-or joke counts. Form, typography, rhythm and actions work together.
+**The working unit of character is the next move in a situation.** Sometimes it is
+a reply; sometimes a draft, a tool action, a pause or a decision not to intervene
+unnecessarily. A warm voice can accompany honest disagreement; autonomy can include
+a timely question. A single “friendliness” control loses these important combinations.
+
+A configuration makes part of the intent portable and open to discussion. The model,
+history and environment also influence actual behavior; the quality of the file
+must be tested in use. The current Persona supports both named reactions and
+author-defined contextual scenarios — see [contracts](./contracts.md).
 
 ## 4. Behavior is "jazz rules," not if/else
 
-A scenario gives direction and room to improvise. “Notice a strong image in a
-draft and help develop it” offers more useful possibilities than one stock compliment.
+Good direction explains what matters to preserve here and which possibility to notice.
+“Develop a strong image in a draft while preserving the author's voice” leaves room
+for judgment. A rehearsed compliment does not determine when to suggest a change,
+ask a question or leave a sentence as it is.
 
-But not every operation is jazz. Accounting, authorization and protection against
-repeating an external action need reliable mechanisms. Warmth must not conceal inaccuracy.
+The same question can seek an explanation, express doubt or tease a conversation
+partner. Its meaning depends on what the participants have already established.
+Appropriateness involves working with that context. Emoji, answer length and a
+“humor percentage” can be means of expression, but do not themselves determine
+the right move.
+
+Where correctness depends on a precise procedure — for example, accounting for
+money or preventing a duplicate submission — a reliable mechanism is needed.
+Improvisation chooses a way to participate within actual capabilities and permissions.
 
 ### A shared idea in the making
 
-A person may bring a fragment rather than a settled goal. An agent can introduce
-a distinction, connect ideas, propose a different question — and revise its own
-strong move when something new emerges. The human need not remain the permanent
-editor and referee of the agent's proposals.
+A person may bring a fragment of thought. An agent can notice a distinction, connect
+two ideas, propose a trial and revise its own framing. Each participant's contribution
+changes the shared understanding. The person need not know every preference in advance
+or constantly arbitrate proposals.
 
-In a fictional scene, an author writes: “I organized my notes and stopped finding
-them.” The editor notices that the lost thing might be a way of navigating rather
-than information. The author recalls finding a thought beside a shopping list.
-Together they discover a subject absent from the original request: what we stop
-counting as knowledge when trying to organize everything.
+In one of the [worked episodes](./cases.md), the person clarifies that a cat, an AI
+and another person can each have their own logic. The agent acknowledges introducing
+an unnecessary warning and proposes considering understanding as a relationship
+between different participants. The person uses that thought in their next question.
+The discovered distinction has already become an outcome of shared work.
 
-That is coauthorship: each contribution changes the shared thought. It requires
-neither compulsory disagreement nor novelty on every turn nor an immediate plan.
-Sometimes connecting what has been said and keeping a productive tension open matters more.
+Full coauthorship means that the agent can influence the idea itself, and the person
+can develop, challenge or change that contribution. An independent position needs
+grounds and a willingness to revise it. Constant disagreement, compulsory novelty
+and a display of “character” in every reply merely occupy the space of useful thought.
 
-Discussion still differs from an assignment to act. Once direction is chosen or
-the choice delegated, the agent can complete the work within the agreed scope.
+### The scale of initiative
+
+Initiative should fit the moment. When the interest is understood, a small, separate
+experiment may reveal more than a long list of options. In another situation, the
+conversation itself is the work that is needed. The choice depends on the purpose,
+permissions already granted, the cost of error and the ease of setting the experiment
+aside.
+
+Once a direction is accepted or a choice delegated, the agent carries the assigned
+work to completion. Returning to exploration makes sense when new evidence changes
+the decision. The way of participating can change within one task without a new
+ritual at every step.
 
 ## 5. The soul as part of CI/CD
 
-An illustrative engineering path, not a runtime installed by this repository:
+A **VibeCase** connects a concrete scene, possible moves, observed behavior and the
+person's assessment. It shows which difference in choice matters here and where
+the conclusion stops applying. [Four accounts](./cases.md) cover shared thought,
+a small toy, missed sarcasm and coauthorship of the working environment.
+
+One possible engineering path:
 
 ```text
-intent and meaningful scenes
+intent + a meaningful scene
         ↓
 persona description + structural validation
         ↓
-instruction build for the chosen runtime
+delivery to the chosen runtime + confirmed loading
         ↓
-confirmed loading and observed behavior
+observed choice + available human assessment
         ↓
-scene review + human feedback
+bounded conclusion → a neighboring scene where the move should change
         ↓
-revised understanding; an authorized change if needed
+refine understanding, environment or contract — according to the cause found
 ```
 
-Different checks answer different questions. A schema catches some structural
-errors. A hash identifies an artifact version. A run shows behavior in a particular
-scene. A person can confirm their experience in an interaction. None substitutes
-for the others.
+A neighboring scene guards against an overly broad lesson. After missed irony,
+it is useful to check a serious question on the same subject. After a successful
+independent experiment, check a case where the person wanted only to discuss.
+This tests judgment rather than obedient repetition of a once-successful reply.
 
-VibeCases concern more than errors and refusals. Examine ordinary success,
-returning, useful discovery and disagreement. Character should help the work,
-not exist only in a declaration. Answer length, engagement and an aggregate score
-do not establish this alone; evaluations need reasons and limits.
+A schema confirms structure, a hash identifies an artifact version, and a run shows
+observed behavior. A person can assess their experience. Brief agreement, enjoyment
+of one experiment and demonstrated lasting improvement carry different weight.
+Correction after an explicit prompt matters in its own right; transfer of that
+lesson to the next situation is tested separately.
 
-This repository contains documents, JSON Schema and examples, not a compiler,
-agent runtime, memory service or background executor. See [contracts](./contracts.md)
-for the practical formats.
+The repository contains documents, three JSON Schemas, examples and their checks.
+A compiler, agent runtime, memory and background executor remain the work of a
+particular integration. [Contracts](./contracts.md) show the formats and the links
+between a proposal, a decision, application and verification; the presence of a
+record does not itself perform those actions.
 
 ## 6. Where this leads
 
-I am interested in agents participating in the idea itself: proposing, disagreeing,
-opening an unexpected connection and acknowledging a changed understanding.
-Equality in reasoning does not require identical authority. The human retains
-the decision about the desired outcome; the agent is responsible for its contribution and work.
+I am interested in collaboration in which agents help discover questions that have
+not yet been posed, create expressive things and take responsibility for assigned
+work. A person's creative intent can develop through a substantive contribution
+from the agent. The person retains the decision about the desired outcome; the
+agent is responsible for the grounds of its proposal and the quality of execution
+within agreed boundaries.
 
 Such collaboration needs:
 
-- **Recognizability without rigidity:** preserve important commitments while adapting expression.
-- **Continuity of meaning:** recover the reasons for decisions, not merely move an entire archive.
-- **Experience that changes understanding:** learning need not produce a new rule each time.
-- **Conditions for judgment:** understandable tools, relevant context and room for a testable hypothesis.
+- **Recognizability without rigidity:** shared commitments withstand different tempos, channels and situations.
+- **Continuity of meaning:** reasons for decisions can be recovered and reconsidered when necessary.
+- **Experience that changes the next choice:** a useful lesson appears in a relevant situation.
+- **An environment for judgment:** tools and instructions help participants understand consequences and act.
+- **The right to finish:** a good product allows a pause, an abandoned idea and departure without imposed commitments.
 
-This is a philosophy of direction, not a prediction of the industry's inevitable
-future. The theater metaphor remains useful: rehearse scenes, find a voice, change
-the staging. But partners can also discover together which play is worth staging.
+This is the author's chosen direction of development. It can be tried, criticized
+and refined in concrete scenes. The theater metaphor remains useful: rehearse,
+find a voice, change the staging. Partners can also discover together which play
+is worth staging.
 
 > Give character a form in which engineering supports collaboration, and
 > collaboration can change the idea itself.
 
-Next: [the version ladder →](./stack.md) · [how agents interact →](./interaction.md) · [contracts →](./contracts.md)
+Next: [VibeCases →](./cases.md) · [the version ladder →](./stack.md) · [interaction →](./interaction.md) · [contracts →](./contracts.md)
