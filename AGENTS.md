@@ -93,3 +93,7 @@ Review the diff, preserve unrelated changes and create a focused local commit fo
 an implementation task unless the user requested otherwise. Publish only when the
 current task authorizes it, to the named repository/branch without force. Use the
 client's higher-priority instructions for permissions and execution boundaries.
+
+Credit actual coauthors in new commits. For Codex contributions, include the trailer
+`Co-authored-by: Codex <noreply@openai.com>` once, preserving any other coauthor trailers.
+Do not rewrite published history solely to add attribution.

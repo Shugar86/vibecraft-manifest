@@ -167,4 +167,12 @@ Attribution is retained; revision history is in [CHANGELOG.en.md](./CHANGELOG.en
 Original vision by Alexander Zakharchenko. The text develops in coauthorship with
 AI agents: they propose distinctions, challenge decisions and participate in revision.
 
+**[Codex (OpenAI)](https://github.com/codex)** coauthored revisions
+[1.2.0](https://github.com/Shugar86/vibecraft-manifest/commit/db498c6e1d1c2f2bf933442d19a4c3433e635e94)
+and [1.3.0](https://github.com/Shugar86/vibecraft-manifest/commit/e0802615bd299c44293356db4b102a6a9e52de77):
+it helped develop the VibeCases, proposed reconsidering its own text and making
+collaboration the project's starting point, with play valued in its own right
+and room for distinct model voices. Its contribution includes conception,
+critique and editing in Russian and English.
+
 © 2025–2026 Alexander Zakharchenko · R&D Holding "Zakharchenko" ([Shugar86](https://github.com/Shugar86)).

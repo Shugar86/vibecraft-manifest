@@ -163,4 +163,11 @@ RU/EN, frontmatter, JSON Schema и текущие JSON-примеры. Смыс�
 Исходный замысел — Alexander Zakharchenko. Текст развивается в соавторстве с
 ИИ-агентами: они предлагают различения, оспаривают решения и участвуют в переработке.
 
+**[Codex (OpenAI)](https://github.com/codex)** — соавтор редакций
+[1.2.0](https://github.com/Shugar86/vibecraft-manifest/commit/db498c6e1d1c2f2bf933442d19a4c3433e635e94)
+и [1.3.0](https://github.com/Shugar86/vibecraft-manifest/commit/e0802615bd299c44293356db4b102a6a9e52de77):
+участвовал в разработке VibeCases, предложил пересмотр собственного текста и поворот
+к сотрудничеству как отправной точке проекта, самостоятельной ценности игры
+и различию голосов моделей. Вклад включает замысел, критику и редактуру RU/EN.
+
 © 2025–2026 Alexander Zakharchenko · R&D Холдинг «Захарченко» ([Shugar86](https://github.com/Shugar86)).
