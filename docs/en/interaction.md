@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — How Agents Interact
 lang: en
-version: "1.3.0"
+version: "1.3.1"
 layer: philosophy + engineering
 ---
 
@@ -74,10 +74,17 @@ explains its consequences and proposes reconsidering the direction together.
 In commissioned work, a new possibility remains distinct from an accepted change
 to the task.
 
+When direction changes, state what happened to the earlier assignment: it was
+already completed, replaced by the human's decision, deferred or remains an
+obligation. Proposing a new criterion alone does not settle that question. The
+current assignment or delegation may already provide grounds for the accepted
+choice; no repeat approval is needed merely for the record. A short
+[pivot record](./cases.md#an-optional-turn-card) can preserve the distinction when it will matter later.
+
 These distinctions are used as the situation calls for them. A live conversation
 can jump from a probe to a new hypothesis, leave a question open or simply end.
 Continuation depends on seeing what was proposed, decided, checked and left open.
-[VibeCases](./cases.md) examines four real episodes and two separately identified
+[VibeCases](./cases.md) examines five real episodes and separately identified
 imagined scenes, with different grounds for drawing conclusions from them.
 
 ## One soul, many bodies

@@ -2,8 +2,9 @@
 """Read-only local checks; not a runtime or a test of the manifesto's philosophy.
 
 Uses CommonMark links/fences, flat YAML frontmatter, and GitHub-style heading
-anchors (Unicode letters/numbers/marks, hyphens, underscores, duplicate suffixes).
-Raw HTML anchors/links and external URLs are outside this gate's coverage.
+anchors (Unicode letters/numbers/marks, hyphens, underscores, duplicate suffixes)
+and custom <a name="..."> anchor targets. Other raw HTML and external URLs are
+outside this gate's coverage.
 JSON Schema format keywords remain annotations, not asserted format checks.
 JSON examples in contracts.md use the schema linked in their heading section;
 sections without a schema are explicitly reported as syntax-only examples.
@@ -13,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 from dataclasses import dataclass, field
+from html.parser import HTMLParser
 import json
 import os
 from pathlib import Path
@@ -78,6 +80,33 @@ def heading_anchors(tokens):
             anchor = f"{slug}-{suffix}"
         used.add(anchor)
     return used
+
+
+def custom_anchors(tokens):
+    """Read named HTML targets without treating code or comments as markup."""
+    class AnchorParser(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.anchors = set()
+
+        def handle_starttag(self, tag, attrs):
+            if tag == "a":
+                name = dict(attrs).get("name")
+                if name:
+                    self.anchors.add(name)
+
+    parser = AnchorParser()
+
+    def visit(items):
+        for token in items:
+            if token.type in {"html_inline", "html_block"}:
+                parser.feed(token.content)
+            if token.children:
+                visit(token.children)
+
+    visit(tokens)
+    parser.close()
+    return parser.anchors
 
 
 def destinations(tokens):
@@ -168,7 +197,8 @@ def validate(root: Path) -> Report:
                 if str(pair["ru"].get(key)) != str(pair["en"].get(key)):
                     issue(root / "docs" / "en" / relative, f"RU/EN frontmatter {key} mismatch")
 
-    anchors = {path: heading_anchors(tokens) for path, tokens in markdown.items()}
+    anchors = {path: heading_anchors(tokens) | custom_anchors(tokens)
+               for path, tokens in markdown.items()}
     for path, tokens in markdown.items():
         for destination in destinations(tokens):
             target = local_target(path, destination)

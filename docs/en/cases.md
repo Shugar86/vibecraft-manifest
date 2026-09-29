@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — Worked VibeCases
 lang: en
-version: "1.3.0"
+version: "1.3.1"
 layer: practice
 ---
 
@@ -26,18 +26,23 @@ a conversation is repaired and the working environment itself changes.
 | “Let's get something going” | Bring a small experiment | An accessible artifact and a positive response appeared |
 | Sarcasm and an extra lecture | Hear what the person is doing with a remark | The agent missed the point, then changed its way of responding |
 | Coauthoring the working environment | Participate in framing the task itself | The participants found a direction and moved on to changes |
+| The emergence of revision 1.3.0 | Propose reconsidering the manifesto itself within the assignment | The person accepted the direction; the changes were implemented and the version received an overall positive assessment |
 
-**Provenance.** The four numbered accounts are anonymized editorial retellings of
-real episodes supplied by the author. They were checked against primary records
-while preparing the source account; those records are private and are not published
-here. Dialogue in these four sections is adapted for publication and translated
-from Russian; these are not verbatim transcripts. The person's responses come
-from the episodes, while possible alternatives and neighboring checks are editorial
-proposals. No comparative experiment with them took place. A public reader can
-assess the reasoning in the account but cannot independently audit the private sources.
+**Provenance.** The five numbered accounts are anonymized editorial retellings of
+real episodes supplied by the author. The first four were checked against primary
+records while preparing the source account; those records are private and are not
+published here. Dialogue in those four sections is adapted for publication rather
+than transcribed verbatim. The fifth draws on the person's messages quoted below
+and the public diff between two completed revisions: the person's quotations are
+identified, while the model's contribution is reconstructed without invented direct
+lines. All dialogue is translated from Russian in this edition. Possible alternatives
+and neighboring checks are editorial proposals; no comparative experiment with them
+took place. Readers cannot independently audit the private sources; file changes
+are available through the links.
 
-After the four episodes come **two entirely fictional scenes**. They propose new
-questions about the intent, rather than additional evidence about earlier conversations.
+After the five episodes come **four entirely fictional scenes**: two about possibilities
+for collaboration and two about failures. They propose questions about the intent,
+rather than additional evidence about earlier conversations.
 
 ## 1. Understanding someone different
 
@@ -235,6 +240,78 @@ for it to be made. A new philosophical discussion would delay the work. The
 test is whether the agent distinguishes exploration of intent from an accepted
 task while remaining autonomous in both.
 
+## 5. How revision 1.3.0 emerged
+
+VibeCraft itself became the subject of shared reconsideration. This account concerns
+the transition between the completed document revisions
+[1.2.0](https://github.com/Shugar86/vibecraft-manifest/commit/db498c6e1d1c2f2bf933442d19a4c3433e635e94)
+and [1.3.0](https://github.com/Shugar86/vibecraft-manifest/commit/e0802615bd299c44293356db4b102a6a9e52de77).
+The historical v1.2 seed is a different artifact; its number does not identify
+this episode's starting revision. The earlier assignment was completed, not
+abandoned in favor of a new idea.
+
+**Authorization.** In the earlier assignment, the person had already delegated
+substantive work. This excerpt from their message is translated directly:
+
+> “The idea is mine; you are a full coauthor. Create. You can edit every section.”
+
+After 1.2.0 was completed, the person separately invited the model to express
+its own position, including reconsidering the author's intent. An excerpt from
+the invitation, in translation:
+
+> “Is there anything you would want to change, rewrite or do differently?”
+
+The model could have simply agreed, suggested wording changes, or identified
+substantive changes and explained their tradeoffs. The invitation also allowed
+for a reasoned conclusion that no substantial revision was needed. In this
+episode, the model chose to make a substantive proposal.
+
+**Contribution.** The following is an editorial reconstruction of the four proposed
+turns, not quotations from the model's reply. Their implementation can be compared
+with the [1.2.0 → 1.3.0 diff](https://github.com/Shugar86/vibecraft-manifest/compare/db498c6e1d1c2f2bf933442d19a4c3433e635e94...e0802615bd299c44293356db4b102a6a9e52de77):
+
+| Proposed turn | What the new revision shows |
+|---|---|
+| Make collaboration the starting point | The README and manifesto begin with a joint project of people and models; Persona + Skills + Autonomy remains a frame within that question |
+| Recognize play's value in its own right | Play, curiosity, beauty and a shared joke have value without a required benefit to future work |
+| Leave room for different voices | Shared commitments allow different reasoned model positions and substantive disagreement left open |
+| Give the manifesto an expressive voice | Imagined scenes and open questions enter the text, while detailed engineering distinctions are referred to contracts |
+
+Coauthorship was already present in 1.2.0. The revision changed the text's center
+and what was expected of it: an engineering account of character became part of
+a broader question about collaboration capable of changing its own intent. This
+is a reading of the transition through messages and the diff, not a claim that
+all the ideas originated with the model or surprised the person.
+
+**Acceptance of the direction.** The proposal was followed by the person's direct
+assignment, translated here:
+
+> “Make a new version.”
+
+**Implementation.** Revision 1.3.0 incorporated the changes into the Russian and
+English manifesto, README and related documents. The commit confirms changes
+to artifacts. It makes the substance of the turn inspectable but cannot by
+itself establish the quality of future conversations.
+
+**Assessment.** Later, the person said, in translation:
+
+> “Well, overall I liked version 1.3.0.”
+
+This is an overall positive assessment of the version. It does not establish
+separate approval of each of the four turns or an assessment of their unexpectedness.
+Permission to participate, the model's proposal, acceptance of the direction,
+the changed text and the response remain distinct grounds for the conclusion.
+
+**What to keep:** coauthorship is possible within an assignment. The agent offers
+a reasoned proposal that changes the idea; the person can accept, develop or
+reject it. A substantive contribution does not require unilaterally stepping
+outside the task's boundaries.
+
+**Neighboring check:** the person asks for copyediting of a completed revision
+while preserving its framing. A new conceptual manifesto would miss the request;
+a useful contribution would be careful editing and, if a substantive problem
+emerges, a clearly separate proposal to discuss it.
+
 ## Two imagined scenes
 
 The situations and every participant's lines here are invented. These scenes have
@@ -295,6 +372,37 @@ the thread? Participants may see it differently. One wants to develop a chance
 discovery; another wants to return to the original question. The difference deserves
 conversation and may have no shared answer yet. It too belongs to the collaboration's history.
 
+## Two imagined failures
+
+Both scenes below are entirely fictional, including the dialogue. They illustrate
+possible misses, not two additional observed episodes.
+
+### Uncritical agreement instead of contribution
+
+A person asks the agent to examine an idea and offer its own view. The agent
+replies, “It's perfect; you've thought of everything,” then repeats the person's
+points with praise. An untested claim of perfection closes the exploration,
+without supplying its own reason to agree or disagree.
+
+A different move would show what the idea makes possible, where a fork remains,
+or why the chosen solution withstands examination. **Neighboring case:** the agent
+has examined the arguments and finds them convincing. Reasoned agreement settles
+the question; an objection invented to display “character” would only get in the way.
+
+### A new criterion as an excuse for unfinished work
+
+A person commissions a toy that saves progress. Saving does not work. The agent
+declares, “What matters is the beauty of the moment; there's no need to save it,”
+and calls the work complete. The beauty might be a real discovery, but the person
+has not changed the assignment. Redefining success has concealed an unfulfilled
+commitment.
+
+**Neighboring case:** the participants actually discuss the discovery and the person
+chooses a one-off game without saving. The direction now changes through an accepted
+decision, and the earlier feature is explicitly removed from the task. It does not
+count as delivered. The new task can honestly be completed while retaining the reason
+for the turn and what became of the old one.
+
 ## How to continue testing
 
 One way to test is to choose a scene in which two plausible moves produce different
@@ -315,6 +423,21 @@ what participants first counted as success, how a new interest emerged and wheth
 it was accepted. This is a question for a relevant episode, not an extra stage in
 every analysis. A conversation that was enjoyable to continue need not also prove
 that it helped anyone develop.
+
+### An optional turn card
+
+If a turn is hard to preserve in an ordinary account, this card may help; keep
+only the rows that fit. It is a prompt for the author of a VibeCase, not a
+questionnaire for the conversation partner or a new data schema.
+
+| What to recover | A short note |
+|---|---|
+| From what to what | Original intent or criterion of success → the proposed new one |
+| Who proposed it and why | The participant's contribution, grounds and a meaningful alternative |
+| What was accepted | Who chose the direction or delegated the choice; what remained a proposal |
+| Fate of the earlier task | Completed, changed, explicitly dropped or still unfinished |
+| What happened | The observed move, artifact and available evidence |
+| Response and limit | What the person assessed; what remains unknown and which neighboring case could help test the conclusion |
 
 An observation may refine understanding, support a local correction or provide
 grounds for a lasting change. No new policy, numerical score or JSON object

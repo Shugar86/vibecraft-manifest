@@ -19,10 +19,11 @@ that the available evidence does not establish.
 Start from the missing question; a complete reading sequence is not a prerequisite:
 
 - `docs/<lang>/manifesto.md`: collaboration, character, play and a jointly evolving intent.
-- `docs/<lang>/stack.md`: historical v1.0–v1.4 axes and possible engineering forms.
+- `docs/<lang>/stack.md`: named stages, historical labels and possible engineering forms.
 - `docs/<lang>/threads.md`: six cross-cutting questions across those stages.
 - `docs/<lang>/interaction.md`: human/agent collaboration, continuity, sharing and learning.
-- `docs/<lang>/cases.md`: four examined episodes, alternative moves, neighboring checks and explicitly imagined scenes.
+- `docs/<lang>/cases.md`: five examined episodes, alternative moves, neighboring checks,
+  explicitly imagined scenes and an optional case/pivot template.
 - `docs/<lang>/contracts.md`: format boundaries and schema-compatible examples.
 
 `<lang>` is `ru` (primary) or `en`; maintained documents are full semantic mirrors.
@@ -46,8 +47,9 @@ Neither a tool declaration nor a schedule in a legacy example creates a capabili
 
 - Every maintained document under `docs/{ru,en}/` has YAML frontmatter:
   `title`, `lang`, `version`, `layer`. Version is the **document revision**;
-  the v1.0–v1.4 conceptual ladder has a separate meaning.
-- Preserve existing headings/anchors; readers may have external deep links.
+  conceptual stages use names; their former v1.0–v1.4 labels remain historical references.
+- Preserve published section links. Headings may be rewritten to match their content;
+  retain each old anchor with `<a name="old-slug"></a>` when renaming a heading.
 - Use relative local links and a top-of-document RU↔EN language link.
 - Update the matching language, navigation and examples when changing meaning.
 - Preserve attribution, licenses and historical records. Do not add private context.
@@ -67,6 +69,10 @@ Neither a tool declaration nor a schedule in a legacy example creates a capabili
 - Humans and models can develop the question and criteria for success together.
   Distinguish an accepted change in direction from fulfillment of the previous task.
   Discussion is not an assignment.
+- A substantive contribution may arise within an assignment. Separate its content
+  and influence from authority to act; neither unauthorized action nor disagreement
+  is required for coauthorship. General positive feedback does not establish which
+  particular change the human valued.
 - Shared commitments allow different voices and reasoned positions. Preserve a
   material open disagreement when resolution is unnecessary; do not force consensus.
 - Experience may revise understanding without creating a new rule or memory record.

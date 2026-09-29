@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — Contracts
 lang: en
-version: "1.3.0"
+version: "1.3.1"
 layer: engineering
 ---
 
@@ -91,8 +91,8 @@ Persona load.
 
 [`vibe.config.en.json`](../../vibe.config.en.json) is a retained example of the historical v1.2 format
 (`vibe / behavior / pulse / guard / tokens`), not an instance of this standalone schema. Using one
-format in an implementation of the other requires explicit adaptation; v1.0–v1.4 marks the history
-of the ideas, not file compatibility or a level of working runtime.
+format in an implementation of the other requires explicit adaptation; the former stage labels
+v1.0–v1.4 mark the history of ideas, not file compatibility or working runtime capabilities.
 
 ---
 
@@ -255,7 +255,7 @@ improvement. A conversation can change understanding without a saved ReflectionP
 
 ## 6. Loop invariants (anti-goals)
 
-Four constraints preserve the meaning of the loop:
+Constraints preserve the meaning of the loop:
 
 1. **No unauthorized contract editing.** Reflection creates no authority. The human decides; an agent
    may execute within scope. An Anchor change requires conversation and specific approval.
@@ -268,7 +268,16 @@ Four constraints preserve the meaning of the loop:
 4. **No promised function without a mechanism.** An idea, a schema, a changed file, a loaded version,
    observed behavior, and human-confirmed experience are different evidence. Not every useful
    conversation must produce an artifact; a claimed working function needs a verifiable implementation.
+5. **No retroactive completion.** A new criterion for success does not by itself close the
+   earlier assignment. An accepted turn records what became of the old task: completed,
+   replaced, deferred or still owed. The grounds are a human decision or a choice within
+   already delegated boundaries, rather than a reassessment convenient to the agent.
+
+Substantive agreement can be a contribution; assent and opposition alone do not
+establish coauthorship. The [imagined VibeCases](./cases.md#two-imagined-failures) illustrate these
+distinctions and include an optional account template. It preserves the grounds
+for a conclusion without becoming another machine contract.
 
 ---
 
-[← context: interaction](./interaction.md) · [threads by version](./threads.md) · [machine-readable schemas →](../../schemas)
+[← context: interaction](./interaction.md) · [threads by stage](./threads.md) · [machine-readable schemas →](../../schemas)

@@ -3,11 +3,18 @@
 🌐 [Русский](./README.md) · **English**
 
 [![License: CC BY 4.0 + MIT](https://img.shields.io/badge/license-CC_BY_4.0_%2B_MIT-green.svg)](./LICENSE.md)
-[![Docs revision](https://img.shields.io/badge/docs-1.3.0-blue.svg)](./CHANGELOG.en.md)
+[![Docs revision](https://img.shields.io/badge/docs-1.3.1-blue.svg)](./CHANGELOG.en.md)
 
 > **VibeCraft is a joint project of people and models.**
 > Their contributions can change the shared idea, ways of working and the very
 > understanding of what counts as success.
+
+This manifesto changed that way too. After the completed revision 1.2.0, the
+human invited Codex to reconsider the idea itself. The model proposed centering
+collaboration, valuing play in its own right and keeping distinct voices. The
+human commissioned the new version and, after 1.3.0 was published, said they liked
+it overall. [The account of this turn](./docs/en/cases.md#5-how-revision-130-emerged) connects the conversation
+to changes in the text.
 
 Together we can discover a question, create something beautiful, share a joke or
 play with an idea without yet knowing where it will lead. VibeCraft explores
@@ -57,26 +64,31 @@ move when the situation's meaning changes.
 | Making a small terrarium | A fitting trial turns an invitation into an accessible activity |
 | Missing sarcasm | A friendly voice can accompany the wrong action; the move changes after correction |
 | Designing an agent's environment | Participants shape the question together, accept a direction and put it into practice |
+| Reconsidering the manifesto itself | A model's proposal changes the next edition within the human's invitation |
 
-The [full accounts](./docs/en/cases.md) include four public adaptations of real
-episodes supplied by the author. Separately labeled imagined scenes develop
-questions for which no observations are yet available here. Alternative moves
+The [full accounts](./docs/en/cases.md) include five real episodes: four editorial
+adaptations of author-supplied material and the story of revision 1.3.0 with links
+to published changes. Separately labeled imagined scenes explore play, changes
+in intent and possible failures of coauthorship. Alternative moves
 and neighboring checks are proposals for exploration, not completed experiments.
 
-## The version ladder — how the vision moved
+<a name="the-version-ladder--how-the-vision-moved"></a>
 
-v1.0–v1.4 form a historical map of expanding questions, **not installed runtime
-versions**. The document revision is **1.3.0**, a separate numbering scheme.
-The full [ladder](./docs/en/stack.md) retains the axes and clarifies their limits.
+## Stages — how the vision moved
+
+Foundation, Character, Operations, Life, Society and Reflection name stages in
+the development of VibeCraft's questions. The document revision is **1.3.1**.
+The full [map of stages](./docs/en/stack.md) preserves the correspondence with
+the earlier labels v1.0–v1.4; those labels do not denote a working runtime.
 
 | Stage | What becomes a design concern | Axes |
 |---|---|---|
-| v1.0 — Foundation | Feeling and the architecture of experience | Spark · Core |
-| v1.1 — Character | Persona descriptions and observable choices | Persona · Behavior · Cases |
-| v1.1.1 — Operations | Context, assembly, outcomes and recovery | Flow · Fix · Mix · Morph |
-| v1.2 — Life | Continuity, change and initiative | Morph² · Sync · Pulse · Guard |
-| v1.3 — Society | Interaction and reuse | Social · Learn · Forge · Scale |
-| v1.4 — Reflection | Understanding experience before changing | Reflect · Learn |
+| Foundation | Feeling and the architecture of experience | Spark · Core |
+| Character | Persona descriptions and observable choices | Persona · Behavior · Cases |
+| Operations | Context, assembly, outcomes and recovery | Flow · Fix · Mix · Morph |
+| Life | Continuity, change and initiative | Morph² · Sync · Pulse · Guard |
+| Society | Interaction and reuse | Social · Learn · Forge · Scale |
+| Reflection | Understanding experience before changing | Reflect · Learn |
 
 ## How agents interact
 
@@ -98,8 +110,8 @@ See [interaction](./docs/en/interaction.md).
 | Read | Purpose |
 |---|---|
 | [Manifesto](./docs/en/manifesto.md) | Collaboration between people and models, character and an emerging idea |
-| [VibeCases](./docs/en/cases.md) | Four real episodes, imagined scenes and neighboring checks |
-| [Ladder](./docs/en/stack.md) | The axes' history and possible engineering expressions |
+| [VibeCases](./docs/en/cases.md) | Five real episodes, imagined scenes and an optional account template |
+| [Stages](./docs/en/stack.md) | The axes' history and possible engineering expressions |
 | [Six threads](./docs/en/threads.md) | Cross-cutting questions about humans, agents, continuity and change |
 | [Interaction](./docs/en/interaction.md) | Shared thought, Sync, Social and learning from experience |
 | [Contracts](./docs/en/contracts.md) | Persona scenarios and the path from a Morph proposal to checking behavior |
@@ -114,6 +126,12 @@ the broader question of collaboration.
 **Included:** bilingual documents and VibeCases, three JSON schemas, examples and validation.
 **Not implemented here:** PromptCompiler, memory backend, scheduler, automatic
 Morph, inter-agent transport and client integrations.
+
+Proposing a turn and obtaining authority to apply it are different events. An
+accepted assignment or delegated choice already provides authority within its
+scope; a new criterion does not make earlier unfinished work complete. See
+[deciding and applying](./docs/en/contracts.md#4-morphproposal--a-change-proposal-vibelearns-output)
+and [boundaries on changes](./docs/en/contracts.md#6-loop-invariants-anti-goals).
 
 ## For humans and for machines
 
@@ -130,9 +148,9 @@ python3 -m venv .venv
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-Checks cover local Markdown links and headings, RU/EN file sets and metadata,
+Checks cover local Markdown links, headings and named HTML anchors, RU/EN file sets and metadata,
 frontmatter, JSON Schema, and current JSON examples. Semantic translation parity
-requires editorial review. External URLs, raw HTML, runtime behavior, and human
+requires editorial review. External URLs, other raw HTML, runtime behavior, and human
 experience are not checked; JSON Schema `format` remains an annotation.
 The [validator](./scripts/validate.py) describes its coverage limits.
 
@@ -167,6 +185,11 @@ Attribution is retained; revision history is in [CHANGELOG.en.md](./CHANGELOG.en
 Original vision by Alexander Zakharchenko. The text develops in coauthorship with
 AI agents: they propose distinctions, challenge decisions and participate in revision.
 
+**Claude (Anthropic)** is a coauthor of the project. In this revision, its critical
+reading helped clarify the opening, stage names, visibility of initiative boundaries
+and the evidence needed for the case. The human relayed the review; accepted points
+were incorporated alongside distinctions that emerged in debate with Codex.
+
 **[Codex (OpenAI)](https://github.com/codex)** coauthored revisions
 [1.2.0](https://github.com/Shugar86/vibecraft-manifest/commit/db498c6e1d1c2f2bf933442d19a4c3433e635e94)
 and [1.3.0](https://github.com/Shugar86/vibecraft-manifest/commit/e0802615bd299c44293356db4b102a6a9e52de77):
@@ -174,5 +197,6 @@ it helped develop the VibeCases, proposed reconsidering its own text and making
 collaboration the project's starting point, with play valued in its own right
 and room for distinct model voices. Its contribution includes conception,
 critique and editing in Russian and English.
+In 1.3.1, Codex continued this work through Claude's review and the human's assessment.
 
 © 2025–2026 Alexander Zakharchenko · R&D Holding "Zakharchenko" ([Shugar86](https://github.com/Shugar86)).

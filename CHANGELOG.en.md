@@ -3,8 +3,45 @@
 🌐 [Русский](./CHANGELOG.md) · **English**
 
 Format — [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). This is the history of the **manifesto**
-(the documents), not of a separate product. The ladder of the VibeCraft methodology itself (v1.0→v1.4) is
+(the documents), not of a separate product. Named stages in the development of the idea are
 described in [`docs/en/stack.md`](./docs/en/stack.md).
+
+## [1.3.1] — 2026-09-29
+
+An editorial refinement of 1.3.0 through Claude's review, Codex's analysis and
+human feedback. The project's foundations remain; they are easier to see and examine.
+
+### Changed
+
+- The README and manifesto open with a real episode of reconsidering the text.
+  Manifesto headings match their current content, with links to the contracts'
+  rules for deciding on and applying changes.
+- Foundation, Character, Operations, Life, Society and Reflection are named
+  stages. Earlier labels v1.0–v1.4 remain as a historical correspondence;
+  document revision numbers no longer compete with stage headings.
+- Substantive contribution is distinguished from authority: coauthorship can
+  occur within an assignment. An accepted new criterion requires a clear account
+  of the earlier task; a shift of interest does not make an unfinished feature complete.
+- The README explicitly describes Claude's and Codex's contributions to this revision.
+
+### Added
+
+- A fifth real VibeCase: the move from completed revision 1.2.0 to 1.3.0.
+  Invitation, proposal, acceptance, implementation and the human's overall positive
+  assessment are distinct; commits and a diff make the text's history accessible.
+- Two imagined scenes: assent in place of contribution, and a changed criterion
+  used to excuse unfinished work. Neighboring cases show fitting agreement or turns.
+- An optional, readable turn card in VibeCases.
+- Named HTML anchors preserve earlier links after headings change. The validator
+  checks these link targets, with two added regression tests.
+
+### Compatibility and evidence
+
+RU/EN are updated together. The first four real cases, historical seed files and
+JSON Schemas are preserved. The new real case establishes an accepted revision
+of documents; it does not establish lasting model improvement or that each
+proposal surprised the human. Imagined failures are not presented as observations.
+No new machine format or runtime was added.
 
 ## [1.3.0] — 2026-09-29
 

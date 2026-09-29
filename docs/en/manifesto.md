@@ -1,13 +1,26 @@
 ---
 title: VibeCraft — Manifesto
 lang: en
-version: "1.3.0"
+version: "1.3.1"
 layer: philosophy
 ---
 
-# Manifesto: the soul as engineering
+<a name="manifesto-the-soul-as-engineering"></a>
+
+# Manifesto: an idea shaped together
 
 🌐 [Русский](../ru/manifesto.md) · **English** · [← overview](../../README.en.md)
+
+After document revision **1.2.0** was complete, the person invited a model to reconsider
+VibeCraft's underlying idea: if it saw things differently, the manifesto could be rewritten.
+The model proposed putting collaboration at the center, recognizing the value of play
+in its own right and preserving distinct, reasoned voices. The person asked it to
+“make a new version” — and those proposals became part of revision **1.3.0**.
+
+Later, the person assessed it: “Well, overall I liked version 1.3.0.” This is an assessment
+of that particular revision. This brief account summarizes a real exchange, with the person's
+remarks translated; the [case study](./cases.md#5-how-revision-130-emerged) connects the proposals, the accepted change
+and the resulting text.
 
 > **VibeCraft is a joint project of people and models about the interactions we want to create.**
 > Participants can change the idea, offer reasons of their own and discover together
@@ -22,7 +35,9 @@ and what emerges between them. “Soul” is our image of recognizability and co
 Different models participate through their contributions; this text, too, can change
 under the influence of one of them.
 
-## 1. The problem: everyone builds snowflakes
+<a name="1-the-problem-everyone-builds-snowflakes"></a>
+
+## 1. Interaction beyond the persona
 
 We assemble a voice, memory and rules of behavior anew for each persona. It is easy
 to lose the question behind them: what interaction does all of this make possible?
@@ -39,7 +54,9 @@ for a draft, a tool can show the consequences of an action, and memory can resto
 the grounds for an old thought. This gives the next participant an opportunity
 to continue, disagree or take a different turn.
 
-## 2. The solution: three bricks
+<a name="2-the-solution-three-bricks"></a>
+
+## 2. Collaboration and its conditions
 
 The starting point is **collaboration capable of changing its own idea**. A person
 may bring an interest, a model a distinction, and another participant an example
@@ -63,7 +80,9 @@ a lost reason for a decision.
 The formula describes aspects of an agent's design. Interaction itself develops
 through what the participants do with those possibilities.
 
-## 3. The radical idea: a soul can be coded
+<a name="3-the-radical-idea-a-soul-can-be-coded"></a>
+
+## 3. Character in a move and what follows
 
 We can engineer the conditions in which character finds expression: attention,
 form, rhythm, voice, memory and room for choice. A quiet editor protects concentration.
@@ -134,12 +153,14 @@ a task and returning to a familiar game can also be what brought the participant
 together. A good environment allows them to continue, pause or finish without
 an imposed next step.
 
-## 5. The soul as part of CI/CD
+<a name="5-the-soul-as-part-of-cicd"></a>
+
+## 5. From a scene to evidence
 
 A **VibeCase** examines a scene closely: what the participants brought, which moves
-were possible, what happened and what proved significant. [Four accounts](./cases.md)
-preserve real episodes of shared thought, play, a missed cue and reconsideration
-of the working environment. Imagined scenes alongside them help explore
+were possible, what happened and what proved significant. The [case studies](./cases.md)
+preserve shared thought, play, a missed cue and reconsideration of the working environment
+and the manifesto itself. Imagined scenes alongside them help explore
 possibilities that have not yet been tested.
 
 When checking an implementation, useful questions include: was what mattered
@@ -169,6 +190,12 @@ shared work and its responsibilities: the person retains the decision about
 the desired outcome, while the agent is responsible for the grounds of its
 contribution and the execution of assigned work.
 
+A substantive contribution can also arise within an assignment. Independence requires
+neither unauthorized action nor obligatory disagreement: authorship of a thought and
+permission to act are different questions. Lasting changes have a [contract revision process](./contracts.md#4-morphproposal--a-change-proposal-vibelearns-output);
+the [invariants](./contracts.md#6-loop-invariants-anti-goals) maintain boundaries around
+memory, learning and promises of functionality.
+
 Several questions remain open:
 
 - When do differences between models enrich a shared endeavor, and when do they disrupt its continuity?
@@ -181,4 +208,4 @@ unexpected game or collaboration may shift them again.
 > Create conditions for different ways of seeing to meet —
 > and allow that encounter to change what we create.
 
-Next: [VibeCases →](./cases.md) · [the version ladder →](./stack.md) · [interaction →](./interaction.md) · [contracts →](./contracts.md)
+Next: [VibeCases →](./cases.md) · [development stages →](./stack.md) · [interaction →](./interaction.md) · [contracts →](./contracts.md)

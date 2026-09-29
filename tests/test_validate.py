@@ -73,6 +73,29 @@ class ValidationTests(unittest.TestCase):
         self.write("README.md", "[missing](./docs/ru/contracts.md#absent)")
         self.assertIn("unknown heading anchor", self.errors())
 
+    def test_renamed_heading_keeps_custom_anchor_links(self):
+        self.doc("ru", "renamed.md", '<a name="старый-заголовок"></a>\n\n'
+                 '# Новое название\n\nInline <a name="old-inline"></a> anchor.\n\n'
+                 '<a name="echo-1"></a>\n\n## Echo\n\n## Echo\n')
+        self.doc("en", "renamed.md", "# Renamed")
+        self.write("README.md", "[old](docs/ru/renamed.md#старый-заголовок)\n"
+                   "[new](docs/ru/renamed.md#новое-название)\n"
+                   "[inline](docs/ru/renamed.md#old-inline)\n")
+        self.assertEqual(self.errors(), "")
+        tokens = VALIDATOR.MarkdownIt("commonmark").parse(
+            (self.root / "docs/ru/renamed.md").read_text())
+        # Custom aliases must not alter GitHub's duplicate-heading numbering.
+        self.assertIn("echo-1", VALIDATOR.heading_anchors(tokens))
+        self.assertNotIn("echo-2", VALIDATOR.heading_anchors(tokens))
+
+    def test_custom_anchor_examples_and_comments_are_not_targets(self):
+        self.write("README.md", '`<a name="inline-example"></a>`\n\n'
+                   '```html\n<a name="fenced-example"></a>\n```\n\n'
+                   '<!-- <a name="commented-out"></a> -->\n\n'
+                   '[inline](#inline-example) [fence](#fenced-example) '
+                   '[comment](#commented-out)\n')
+        self.assertEqual(self.errors().count("unknown heading anchor"), 3)
+
     def test_unicode_formatted_headings_duplicates_and_reference_links(self):
         self.write("README.md", "# Одна **душа** — много `тел`\n\n"
                    "## Echo\n\n## Echo\n\n## Echo-1\n\n"

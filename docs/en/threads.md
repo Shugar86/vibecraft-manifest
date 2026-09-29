@@ -1,7 +1,7 @@
 ---
-title: VibeCraft — Six Threads Across the Versions
+title: VibeCraft — Six Threads Across the Stages
 lang: en
-version: "1.3.0"
+version: "1.3.1"
 layer: philosophy + engineering
 ---
 
@@ -9,9 +9,10 @@ layer: philosophy + engineering
 
 🌐 [Русский](../ru/threads.md) · **English** · [← overview](../../README.en.md)
 
-> The same ideas as the [ladder](./stack.md), through **cross-cutting questions**: how character
-> emerges, what supports shared judgment, and what survives change. v1.0→v1.4 is a historical
-> route through the intent, not implemented features; frontmatter tracks the document revision separately.
+> The same ideas as the [stages of development](./stack.md), through **cross-cutting questions**: how
+> character emerges, what supports shared judgment, and what survives change. The stages trace the
+> idea's development, not implemented features; frontmatter tracks the document revision separately.
+> The [stage map](./stack.md) connects the former numerical labels to the stage names.
 
 Evolving collaboration between people and models is central to this reading. Persona, Skills and
 Autonomy can support it without determining the whole experience in advance. Participants change
@@ -28,16 +29,16 @@ The questions:
 
 | Thread | Born in | Crystallizes in |
 |--------|---------|-----------------|
-| Human ↔ AI via vibe | v1.0 (UI/UX) | v1.1 (VibeCases) → v1.4 (understanding collaboration) |
-| AI ↔ AI | v1.1.1 (bridge between agents) | v1.3 (VibeSocial) + v1.4 (verifiable shared knowledge) |
-| Where the soul is | v1.1 (persona description) | v1.2 (Anchor/Surface and continuity) |
-| Explaining vibe to an AI | v1.1 (explicit contract) | v1.1.1 (appropriate runtime representation) |
-| Changing self / another | v1.1.1 (version changes) | v1.2 (Morph²) → v1.3 (Learn) → v1.4 (Reflect) |
-| Protecting self and human | v1.1.1 (VibeFix) | v1.2 (VibeGuard) → v1.4 (limits on conclusions and changes) |
+| Human ↔ AI via vibe | Foundation (UI/UX) | Character (VibeCases) → Reflection (understanding collaboration) |
+| AI ↔ AI | Operations (bridge between agents) | Society (VibeSocial) + Reflection (verifiable shared knowledge) |
+| Where the soul is | Character (persona description) | Life (Anchor/Surface and continuity) |
+| Explaining vibe to an AI | Character (explicit contract) | Operations (appropriate runtime representation) |
+| Changing self / another | Operations (version changes) | Life (Morph²) → Society (Learn) → Reflection (Reflect) |
+| Protecting self and human | Operations (VibeFix) | Life (VibeGuard) → Reflection (limits on conclusions and changes) |
 
 "Soul," "body," "dream," and "immunity" are exploratory metaphors. They help pose a question,
-but establish neither consciousness, experience, nor a working mechanism. Early versions foregrounded
-particular axes; that does not mean a current product can postpone basic safety until the "right version."
+but establish neither consciousness, experience, nor a working mechanism. Early stages foregrounded
+particular axes; that does not mean a current product can postpone basic safety until the "right stage."
 
 The common point of observation for all six threads is **the next move and possibilities it opens**.
 What received attention, how was initiative shared, and what became possible after a reply, probe
@@ -47,7 +48,9 @@ and working environment.
 
 ---
 
-## v1.0 — Foundation: vibe first becomes tangible
+<a name="v10--foundation-vibe-first-becomes-tangible"></a>
+
+## Foundation: vibe first becomes tangible
 
 - **Human ↔ AI.** Character is read through what receives attention and which move the product
   makes available. In a workshop, a draft invites continuation; in a controlled form, it is a stage
@@ -68,7 +71,9 @@ and working environment.
 
 ---
 
-## v1.1 — Character: the soul is extracted, vibe gets a language for the model
+<a name="v11--character-the-soul-is-extracted-vibe-gets-a-language-for-the-model"></a>
+
+## Character: the soul is extracted, vibe gets a language for the model
 
 - **Where the soul is.** An explicit contract makes intent available for discussion and testing.
   `vibe` describes position and voice; `behavior` describes ways of acting. This supports participation;
@@ -96,7 +101,9 @@ and working environment.
 
 ---
 
-## v1.1.1 — Operations: the soul gains a body, memory, and first self-defense
+<a name="v111--operations-the-soul-gains-a-body-memory-and-first-self-defense"></a>
+
+## Operations: the soul gains a body, memory, and first self-defense
 
 - **Where the soul is.** The "body" is a concrete execution environment; memory supports
   continuity only where it can be found, understood, and checked. Goals, decision reasons, completed
@@ -123,7 +130,9 @@ and working environment.
 
 ---
 
-## v1.2 — Life: controlled self-change and an immune system
+<a name="v12--life-controlled-self-change-and-an-immune-system"></a>
+
+## Life: controlled self-change and an immune system
 
 - **Changing self.** The **Ship of Theseus** is useful as a question about commitments.
   Anchor preserves agreed foundations; Surface changes their expression. Collaboration may reveal
@@ -155,7 +164,9 @@ and working environment.
 
 ---
 
-## v1.3 — Society: an agent changes an agent, the fleet protects itself
+<a name="v13--society-an-agent-changes-an-agent-the-fleet-protects-itself"></a>
+
+## Society: an agent changes an agent, the fleet protects itself
 
 - **AI ↔ AI.** VibeSocial helps connect different positions: what another participant verified,
   what they hypothesize, and which question remains. A useful contribution can change the framing
@@ -185,7 +196,9 @@ and working environment.
 
 ---
 
-## v1.4 — Reflection: the agent makes sense of itself, the human, and the environment
+<a name="v14--reflection-the-agent-makes-sense-of-itself-the-human-and-the-environment"></a>
+
+## Reflection: the agent makes sense of itself, the human, and the environment
 
 - **Changing self.** Reflect examines experience, Learn revises understanding, and Morph changes
   the contract when that is warranted. Experience can change the question and success criterion,
@@ -232,4 +245,4 @@ and working environment.
 
 ---
 
-[← interaction](./interaction.md) · [ladder](./stack.md) · [VibeCases](./cases.md) · [contracts →](./contracts.md)
+[← interaction](./interaction.md) · [stages of development](./stack.md) · [VibeCases](./cases.md) · [contracts →](./contracts.md)

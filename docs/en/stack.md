@@ -1,27 +1,33 @@
 ---
-title: VibeCraft — The Version Ladder
+title: VibeCraft — Stages of Development
 lang: en
-version: "1.3.0"
+version: "1.3.1"
 layer: philosophy + engineering
 ---
 
-# The version ladder: v1.0 → v1.4
+<a name="the-version-ladder-v10--v14"></a>
+
+# Stages of VibeCraft development
 
 🌐 [Русский](../ru/stack.md) · **English** · [← overview](../../README.en.md)
 
-> The ladder is a historical map of how VibeCraft's intent expanded, not releases of an installed
+> The stages form a historical map of how VibeCraft's intent expanded, not releases of an installed
 > framework or a required implementation sequence. Frontmatter `version` identifies the document
 > revision. Each axis explores **why** and a possible **🔧 how**.
 > The whole vision — [manifesto](./manifesto.md); analyses of concrete scenes — [VibeCases](./cases.md).
 
-```
-v1.0   Foundation  emotion is architecture      VibeSpark · VibeCore
-v1.1   Character   emotion is data              VibePersona · VibeBehavior · VibeCases
-v1.1.1 Operations  emotion is operation         VibeFlow · VibeFix · VibeMix · VibeMorph
-v1.2   Life        emotion is a living process  VibeMorph² · VibeSync · VibePulse · VibeGuard
-v1.3   Society     emotion is a network         VibeSocial · VibeLearn · VibeForge · VibeScale
-v1.4   Reflection  emotion is reflection        VibeReflect · VibeLearn
-```
+| Stage | Image | Axes |
+|---|---|---|
+| Foundation | emotion is architecture | VibeSpark · VibeCore |
+| Character | emotion is data | VibePersona · VibeBehavior · VibeCases |
+| Operations | emotion is operation | VibeFlow · VibeFix · VibeMix · VibeMorph |
+| Life | emotion is a living process | VibeMorph² · VibeSync · VibePulse · VibeGuard |
+| Society | emotion is a network of personas | VibeSocial · VibeLearn · VibeForge · VibeScale |
+| Reflection | emotion is reflection | VibeReflect · VibeLearn |
+
+Former stage labels: Foundation — `v1.0`; Character — `v1.1`; Operations — `v1.1.1`;
+Life — `v1.2`; Society — `v1.3`; Reflection — `v1.4`. These preserve the historical
+connection; they do not identify the current document revision.
 
 "Emotion," "soul," and "life" are a language for designing experience and continuity of character,
 not evidence of a model's inner experience. The schemas in this repository describe data formats;
@@ -35,7 +41,9 @@ examine different aspects of that development.
 
 ---
 
-## v1.0 — Foundation: "emotion is architecture"
+<a name="v10--foundation-emotion-is-architecture"></a>
+
+## Foundation: "emotion is architecture"
 
 Feeling arises from how interaction is arranged: what draws attention, what can be trusted, where one
 pauses, and what invites continuation. Color, rhythm, density, and movement participate alongside
@@ -58,7 +66,9 @@ This also shapes the form: how much room remains for experimentation, surprise a
 
 ---
 
-## v1.1 — Character: "emotion is data"
+<a name="v11--character-emotion-is-data"></a>
+
+## Character: "emotion is data"
 
 An explicit, versioned contract preserves agreements and makes them easier to discuss.
 Both the written direction and its grounds matter: what to notice, what to leave room for,
@@ -75,7 +85,7 @@ itself may reveal something absent from that description. The actual choice is c
   and a conclusion with limits. The analysis can show what participants counted as success and
   whether that changed. A neighboring case calls for a different move: for example,
   a serious question alongside a sarcastic one. Discovery, ordinary success, return and difficulty
-  offer different tests of character. [Four analyses](./cases.md) demonstrate this approach.
+  offer different tests of character. [Analyzed scenes](./cases.md) demonstrate this approach.
 
 ### 🔧 Engineering
 
@@ -96,7 +106,9 @@ it helps choose or check behavior, rather than becoming a required questionnaire
 
 ---
 
-## v1.1.1 — Operations: "emotion is operation"
+<a name="v111--operations-emotion-is-operation"></a>
+
+## Operations: "emotion is operation"
 
 The environment makes judgment possible: it helps find material context, understand a tool response
 and recover the grounds for decisions. In a second session, this lets a useful discovery be developed;
@@ -131,7 +143,9 @@ Distinguish the roles of context without imposing identical files and TTLs on ev
 
 ---
 
-## v1.2 — Life: "emotion is a living process"
+<a name="v12--life-emotion-is-a-living-process"></a>
+
+## Life: "emotion is a living process"
 
 Collaboration develops through new situations, discoveries and disagreements. Character helps make
 a way of participating recognizable while expression, intent and relationships between participants
@@ -184,12 +198,14 @@ observation, not a final verdict. A `GuardScore`, if useful, is a condensed sign
 and limitations, not the persona's health or worth. Choose an action by cause and risk:
 investigate, warn, stop unsafe execution, or roll back an authorized change.
 
-> A possible v1.2 feedback path: Sync → appropriate initiative → observation → understanding → needed action.
+> A possible feedback path at the Life stage: Sync → appropriate initiative → observation → understanding → needed action.
 > Not every signal requires Morph; confirming the previous decision can also be the right result.
 
 ---
 
-## v1.3 — Society: "emotion is a network of personas"
+<a name="v13--society-emotion-is-a-network-of-personas"></a>
+
+## Society: "emotion is a network of personas"
 
 Different positions can broaden a shared question, give it an unexpected form or leave an interesting
 divergence. Participants need not immediately reach one explanation. Shared work can end with an
@@ -215,7 +231,9 @@ object, a new thought or an open conversation they want to continue.
 
 ---
 
-## v1.4 — Reflection: "emotion is reflection"
+<a name="v14--reflection-emotion-is-reflection"></a>
+
+## Reflection: "emotion is reflection"
 
 Making sense of experience helps reveal what to preserve and what to reconsider. A successful
 improvisation can change both the idea and what counts as success: a conversation began by seeking
