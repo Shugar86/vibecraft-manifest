@@ -6,6 +6,42 @@ Format — [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). This is the
 (the documents), not of a separate product. The ladder of the VibeCraft methodology itself (v1.0→v1.4) is
 described in [`docs/en/stack.md`](./docs/en/stack.md).
 
+## [1.3.0] — 2026-09-29
+
+A shared revision following a model's proposal to reconsider its own previous
+edition. Collaboration becomes the project's starting point; participants can
+change both the intent and their idea of success. This number identifies a
+document revision, separately from the historical v1.0–v1.4 ladder.
+
+### Changed
+
+- The manifesto and README begin with interaction between humans and models.
+  Persona, Skills and Autonomy remain engineering supports for that interaction.
+- Play, beauty, curiosity and conversation are recognized as values in their own
+  right; each episode need not justify itself with a lesson, product or improvement.
+- Shared commitments allow different voices and reasoned positions across models.
+  A substantive disagreement can remain open when no decision is needed.
+- Interaction, the ladder and the six threads also consider a changing criterion
+  for success. An accepted change of direction is distinguished from fulfilling the earlier task.
+- The main text is shorter; detailed engineering boundaries are concentrated in
+  the contracts. The Russian and English bodies of work are updated together.
+
+### Added
+
+- Open questions in the manifesto about different models, continuity and changing
+  criteria for success, without claiming final answers in this edition.
+- Separately labeled imagined scenes of shared play and shifting interest in
+  VibeCases. The four real episodes retain their record without invented continuations.
+- A free-play scenario in the Persona example; the unfinished-idea scenario now
+  allows a changing question and different reasoned views to remain open.
+
+### Compatibility and evidence
+
+JSON Schemas and their constraints are unchanged. Examples use the existing
+`behavior.scenarios`; its support requirements remain the same. The new imagined
+scenes are not observations, test runs or evidence of changed model behavior.
+This revision adds no runtime.
+
 ## [1.2.0] — 2026-09-28
 
 A substantive revision coauthored by the author and AI agents. This number denotes

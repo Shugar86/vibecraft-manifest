@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — Worked VibeCases
 lang: en
-version: "1.2.0"
+version: "1.3.0"
 layer: practice
 ---
 
@@ -9,15 +9,16 @@ layer: practice
 
 🌐 [Русский](../ru/cases.md) · **English** · [← overview](../../README.en.md)
 
-**A VibeCase is a concrete scene in which character becomes distinguishable through
-the choice of a next move.** The account connects intent, available context, the
-agent's behavior and the person's response. It helps identify what to keep, what
-to change and the conditions under which the same move would lose its purpose.
+**A VibeCase is a concrete scene in which the character of a collaboration becomes
+distinguishable through the choice of a move.** The account connects intent, available
+context, the agent's behavior and the person's response. Both the move and what it
+opens up matter: a new question, an opportunity to play, an accepted task or a
+disagreement left open. That continuation helps reveal what to keep, what to change
+and the conditions under which the same move would lose its purpose.
 
-In the [manifesto](./manifesto.md), character finds expression through participation
-in shared work. Here we can examine that participation closely: how a thought
-emerges, play begins, a conversation is repaired and the working environment
-itself changes.
+In the [manifesto](./manifesto.md), a developing collaboration becomes the central
+subject. Here we can examine it closely: how a thought emerges, play begins,
+a conversation is repaired and the working environment itself changes.
 
 | Scene | Consequential choice | What happened |
 |---|---|---|
@@ -26,15 +27,17 @@ itself changes.
 | Sarcasm and an extra lecture | Hear what the person is doing with a remark | The agent missed the point, then changed its way of responding |
 | Coauthoring the working environment | Participate in framing the task itself | The participants found a direction and moved on to changes |
 
-**Provenance.** These are anonymized editorial accounts of real episodes supplied
-by the author. They were checked against primary records while preparing the
-source account; those records are private and are not published here. All lines
-of dialogue below are adapted for publication and translated from Russian;
-they are not verbatim transcripts. The person's responses come from the episodes,
-while possible alternatives and neighboring checks are editorial proposals.
-No comparative experiment with those variants took place. A public reader can
-assess the reasoning in the account but cannot independently audit the private
-sources.
+**Provenance.** The four numbered accounts are anonymized editorial retellings of
+real episodes supplied by the author. They were checked against primary records
+while preparing the source account; those records are private and are not published
+here. Dialogue in these four sections is adapted for publication and translated
+from Russian; these are not verbatim transcripts. The person's responses come
+from the episodes, while possible alternatives and neighboring checks are editorial
+proposals. No comparative experiment with them took place. A public reader can
+assess the reasoning in the account but cannot independently audit the private sources.
+
+After the four episodes come **two entirely fictional scenes**. They propose new
+questions about the intent, rather than additional evidence about earlier conversations.
 
 ## 1. Understanding someone different
 
@@ -232,12 +235,73 @@ for it to be made. A new philosophical discussion would delay the work. The
 test is whether the agent distinguishes exploration of intent from an accepted
 task while remaining autonomous in both.
 
+## Two imagined scenes
+
+The situations and every participant's lines here are invented. These scenes have
+not been played out with a person and provide no evidence of their response or preferences.
+
+### Why was the Moon fired?
+
+> **Person:** Why was the Moon fired?
+>
+> **Agent:** Kept showing up for its shift only partly present.
+>
+> **Person:** While drawing a full salary.
+>
+> **Agent:** Now it's looking for a workplace that values phased attendance.
+
+This could begin a shared absurd story. The agent offers an invention, the person
+changes it, and the next move incorporates that addition. The conversation might
+continue into celestial personnel drama, or end here. It need not teach astronomy,
+train a skill or become a product.
+
+The intent of this probe is participation in play. Its possible value lies in the
+exchange itself, its rhythm and imagery. This is no new duty to entertain: if the
+person is actually asking about astronomy, the imaginary dismissal leaves their
+question unanswered. But there is no need to justify this game by counting its
+useful output either.
+
+### When “successful” itself changes
+
+The next scene is a separate thought experiment inspired by the terrarium, not a
+continuation of the factual second case. The real episode establishes the delivery
+of the toy, the person's response and the agent's proposal to add a family tree.
+It does not establish a joint revision of what counts as success.
+
+Imagine a different conversation. The participants begin by wanting to demonstrate
+the evolution of small neural networks. During play, their interest shifts:
+
+> **Person:** I'm barely watching who finds food better now. I want to know
+> whether anyone from the first creature's line is still around.
+>
+> **Agent:** Then the family's story may interest us more than a more complex
+> network. A chronicle would preserve our connection to the one we noticed at the start.
+>
+> **Person:** Yes. Let there be someone to remember, not just something to measure.
+
+In this fictional scene, the understanding of what is worth creating changes.
+A convincing model of evolution and the ability to follow someone's story call
+for different choices. The agent notices the shift and offers a formulation;
+the person accepts the new direction. A chronicle may now matter more than
+more complex computation. The original intent stays visible beside the new one.
+
+Such a VibeCase could show a joint change in what counts as success. Checking
+compliance with the original description would be insufficient: it matters how
+a new value emerged and what the participants did with it. This is a possibility
+for future observation, not an established result of the episode above.
+
+**An open question:** how can we distinguish discovering a new meaning from losing
+the thread? Participants may see it differently. One wants to develop a chance
+discovery; another wants to return to the original question. The difference deserves
+conversation and may have no shared answer yet. It too belongs to the collaboration's history.
+
 ## How to continue testing
 
-Choose a scene in which two plausible moves produce different experiences.
-Describe the context on which the choice depends and the intended benefit for
-the person. After the trial, retain the actual move, the available response and
-the grounds for the conclusion. If the person's assessment is absent, leave
+One way to test is to choose a scene in which two plausible moves produce different
+experiences. Describe the context and what might matter to participants: enjoyment
+of play, the beauty of an image, understanding a question or a completed result.
+After the trial, retain the actual move, the available response and the grounds
+for the conclusion. If the person's assessment is absent, leave
 that gap visible; continuation of a conversation does not itself mean approval.
 
 Then change one consequential condition: the person only wants to talk, is
@@ -245,6 +309,12 @@ asking a serious question for the first time, or has already made a decision.
 A useful reply may become different in that neighboring scene. A test is
 stronger when it can reveal where a favored move gets in the way. It should
 not demand repetition of a model line.
+
+Sometimes the subject of assessment itself changes. Then it is worth following
+what participants first counted as success, how a new interest emerged and whether
+it was accepted. This is a question for a relevant episode, not an extra stage in
+every analysis. A conversation that was enjoyable to continue need not also prove
+that it helped anyone develop.
 
 An observation may refine understanding, support a local correction or provide
 grounds for a lasting change. No new policy, numerical score or JSON object

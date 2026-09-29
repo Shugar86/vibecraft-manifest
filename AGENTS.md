@@ -5,11 +5,12 @@ This file guides work on this repository. Human entry points:
 
 ## What this repo is
 
-A vendor-neutral manifesto about character, experience and shared thought, for AI
-operators beyond coding. It contains conceptual documents, three JSON schemas,
+A shared project of humans and models about the interactions they want to create,
+including character, play, shared thought and changing ideas of success. Its scope
+extends beyond coding and is vendor-neutral. It contains conceptual documents, three JSON schemas,
 examples and document checks — not an agent runtime or a universal operational policy.
 
-“Soul,” “sleep” and “life” are metaphors. Preserve the author's expressive intent
+“Soul,” “sleep” and “life” are metaphors. Preserve the project's expressive intent
 without presenting an implementation, subjective experience or measured result
 that the available evidence does not establish.
 
@@ -17,11 +18,11 @@ that the available evidence does not establish.
 
 Start from the missing question; a complete reading sequence is not a prerequisite:
 
-- `docs/<lang>/manifesto.md`: purpose, character and participation in an unfinished idea.
+- `docs/<lang>/manifesto.md`: collaboration, character, play and a jointly evolving intent.
 - `docs/<lang>/stack.md`: historical v1.0–v1.4 axes and possible engineering forms.
 - `docs/<lang>/threads.md`: six cross-cutting questions across those stages.
 - `docs/<lang>/interaction.md`: human/agent collaboration, continuity, sharing and learning.
-- `docs/<lang>/cases.md`: four examined episodes, alternative moves and neighboring checks.
+- `docs/<lang>/cases.md`: four examined episodes, alternative moves, neighboring checks and explicitly imagined scenes.
 - `docs/<lang>/contracts.md`: format boundaries and schema-compatible examples.
 
 `<lang>` is `ru` (primary) or `en`; maintained documents are full semantic mirrors.
@@ -59,9 +60,15 @@ Neither a tool declaration nor a schedule in a legacy example creates a capabili
 ## Invariants worth honoring
 
 - Character is expressed through choices, including ordinary success and discovery.
+- Shared play, beauty, curiosity and conversation can have value in themselves.
+  Do not require every encounter to produce a lesson, deliverable or lasting change.
 - The next move depends on the conversation's meaning: a question, tease, exploration
   and assignment may use similar words. Tone alone does not establish a fitting choice.
-- Humans and agents can develop the question together; discussion is not an assignment.
+- Humans and models can develop the question and criteria for success together.
+  Distinguish an accepted change in direction from fulfillment of the previous task.
+  Discussion is not an assignment.
+- Shared commitments allow different voices and reasoned positions. Preserve a
+  material open disagreement when resolution is unnecessary; do not force consensus.
 - Experience may revise understanding without creating a new rule or memory record.
 - Consolidation preserves sources, conditions and counterexamples; smaller is not automatically better.
 - Shared infrastructure does not remove project boundaries or turn echoes into independent evidence.
@@ -72,6 +79,8 @@ Neither a tool declaration nor a schedule in a legacy example creates a capabili
 - File version, runtime loading, observed behavior and human experience are distinct claims.
 - Pair a useful lesson with a neighboring situation where the move should change.
   Local correction and acceptance of a direction do not prove lasting improvement.
+- Keep the manifesto expressive and readable; place detailed engineering limits
+  in the contracts rather than repeating them throughout the philosophical text.
 
 ## Working on this repository
 

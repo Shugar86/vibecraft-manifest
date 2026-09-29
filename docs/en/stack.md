@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — The Version Ladder
 lang: en
-version: "1.2.0"
+version: "1.3.0"
 layer: philosophy + engineering
 ---
 
@@ -27,18 +27,29 @@ v1.4   Reflection  emotion is reflection        VibeReflect · VibeLearn
 not evidence of a model's inner experience. The schemas in this repository describe data formats;
 a concrete runtime must implement prompt compilation, memory, scheduling, background passes, and rollout.
 
+In this revision, we read that history through **evolving collaboration between people and models**.
+Persona, Skills and Autonomy can support it: expressing a position, providing ways to act and making
+room for initiative. The relationships between participants extend beyond this assembly. Shared
+experience can change both the idea and what counts as success; the historical axes below help
+examine different aspects of that development.
+
 ---
 
 ## v1.0 — Foundation: "emotion is architecture"
 
-Feeling arises from how work is arranged: what draws attention, what can be trusted, where one
+Feeling arises from how interaction is arranged: what draws attention, what can be trusted, where one
 pauses, and what invites continuation. Color, rhythm, density, and movement participate alongside
 the logic of action. Character is more than the absence of friction: a workshop may invite
 exploration, an editor protect concentration, a partner notice a connection not yet fully formed.
 
 **The working unit of character is the next move in a situation:** a reply, action, draft or pause.
 Voice makes that move recognizable; the product's design determines what it enables.
-For example, a good result can be celebrated, developed further or quietly left with the person.
+The room it leaves matters too: to keep playing, see another question, disagree or end the
+conversation. A good result can be celebrated, developed further or quietly left with the person.
+
+Play, beauty and curiosity have value in themselves. A shared image or a funny exchange can be
+enough on its own; neither needs justification through a future product or greater efficiency.
+This also shapes the form: how much room remains for experimentation, surprise and a pause.
 
 - **VibeSpark** — why the experience is worth creating; what action, understanding, or feeling it enables.
 - **VibeCore** — a recognizable logic of choice from which concrete decisions follow. For example,
@@ -49,9 +60,10 @@ For example, a good result can be celebrated, developed further or quietly left 
 
 ## v1.1 — Character: "emotion is data"
 
-An explicit, versioned contract preserves part of the intent and makes it easier to discuss.
+An explicit, versioned contract preserves agreements and makes them easier to discuss.
 Both the written direction and its grounds matter: what to notice, what to leave room for,
-which possibility to open. The actual choice is checked in use.
+which possibility to open. Persona describes one support for collaboration; the conversation
+itself may reveal something absent from that description. The actual choice is checked in use.
 
 - **VibePersona** — a position and room for improvisation: what matters, what the persona notices,
   which role it occupies, how it sounds, and which commitments it preserves.
@@ -60,22 +72,23 @@ which possibility to open. The actual choice is checked in use.
   can perform different actions in a conversation; context helps choose the move. Jazz rules
   guide judgment and improvisation.
 - **VibeCases** — analyzing a scene through possible moves, observed behavior, the person's assessment
-  and a conclusion with limits. A neighboring case calls for a different move: for example,
+  and a conclusion with limits. The analysis can show what participants counted as success and
+  whether that changed. A neighboring case calls for a different move: for example,
   a serious question alongside a sarcastic one. Discovery, ordinary success, return and difficulty
   offer different tests of character. [Four analyses](./cases.md) demonstrate this approach.
 
 ### 🔧 Engineering
 
 One possible path: `persona data → format validation → runtime adapter → instructions available to the model`.
-The existing [JSON Schemas](./contracts.md) help validate data structure, not the substance of
-collaboration. `PromptCompiler` names a possible adapter, not a function shipped here.
-It may assemble fields, explanations, and examples for a client; benefits for a particular model need testing.
+The existing [JSON Schemas](./contracts.md) define structural data constraints. `PromptCompiler` names a possible
+adapter: it may assemble fields, explanations and examples for a client; its effect on collaboration
+with a particular model is checked separately.
 
 The current Persona's optional `behavior.scenarios` describes situations beyond the named `on_*`
 responses. An entry with `id`, `situation` and `guidance` preserves authored intent; observed behavior
-and human assessment belong to a separate VibeCase. Existing objects without this field remain valid.
-Objects using it need the updated schema and adapter support; validation against the old schema
-with `additionalProperties: false` rejects them. See [contracts](./contracts.md) for details.
+and human assessment belong to a separate VibeCase. Older objects remain valid; new scenarios need
+the updated schema and adapter support. [Contracts](./contracts.md) describe the precise
+compatibility boundary.
 
 A machine format makes fields precise, a short rationale supports judgment, and a scene shows
 the difference. A small edit needs only the context relevant to it. A full analysis belongs where
@@ -102,7 +115,7 @@ Distinguish the roles of context without imposing identical files and TTLs on ev
 | Role | What it helps preserve | When to consult |
 |------|-------------------------|------------------|
 | Contract | Purpose, commitments, boundaries | When loading applicable instructions |
-| Task state | Goal, accepted decision, work done, verified results, unknowns | On resumption and before dependent actions |
+| Task state | Question, current goal and success criterion, decisions, work done, verified results, unknowns and open disagreements | On resumption and before dependent actions |
 | Episodic memory | Event, source, conditions, corrections, counterexamples | When history could change the current conclusion |
 | Curated knowledge | Verified generalization with limits of applicability | When relevant to the current task |
 
@@ -120,9 +133,9 @@ Distinguish the roles of context without imposing identical files and TTLs on ev
 
 ## v1.2 — Life: "emotion is a living process"
 
-Character does not freeze in its first successful line: it changes expression, preserves commitments,
-and finds an appropriate next move. "Living process" is a metaphor for that work over time, not a
-property that follows from having a config or background service.
+Collaboration develops through new situations, discoveries and disagreements. Character helps make
+a way of participating recognizable while expression, intent and relationships between participants
+change. Agreed commitments support this movement; "living process" names its course over time.
 
 ### VibeMorph² — evolution without losing identity (Ship of Theseus)
 
@@ -140,20 +153,23 @@ the same commitments.
   not merely propose it. The current assignment may already contain that decision; no separate
   ceremony is then needed. An artifact saying `approved` does not itself create authority.
 - **MorphHistory** preserves reasons and consequences. **MorphExperiment** compares meaningful
-  scenes and allows the original intent to be wrong; the number of edits does not measure development.
+  scenes and allows the idea and success criterion to be revised. Such a revision distinguishes
+  a new aim from meeting the old one: a failed check cannot be relabeled as a success after the fact.
 
 ### VibeSync — one soul, many bodies → [interaction.md](./interaction.md#one-soul-many-bodies)
 
-A common persona source helps retain commitments while their expression varies across channels.
-A hash checks the equality of a particular artifact, not agent identity, loading, or identical behavior.
-Full prompts for different clients may reasonably differ.
+Shared commitments can coexist with different model voices and positions. These need not converge
+on an identical persona: one model may offer rigorous analysis, another an image that opens a
+different path. Sync helps continue a shared undertaking with an understanding of those differences.
+A hash checks equality of a particular artifact; loading and behavior are checked separately.
 
 ### VibePulse — proactivity
 
-Initiative may be a useful connection within a discussion, a small separate probe or authorized
+Initiative may be an unexpected connection within a discussion, a small separate probe or authorized
 monitoring. Its scale depends on interest, the cost of error, established boundaries and the ability
 to set the probe aside. A tangible result may open a new activity; a pause may leave room for
-the person's next thought. Neither requires constant novelty.
+the person's next thought. Play may continue for its own sake; participation requires neither
+constant novelty nor turning every interest into an assignment.
 
 An invitation to try something does not establish permission for spending or publication.
 An accepted assignment allows work to continue within its boundaries. Background action needs
@@ -175,18 +191,22 @@ investigate, warn, stop unsafe execution, or roll back an authorized change.
 
 ## v1.3 — Society: "emotion is a network of personas"
 
-Working together is valuable when different positions reveal what one alone misses. The aim is not
-the number of agents or their agreement, but stronger shared understanding and a complete result.
+Different positions can broaden a shared question, give it an unexpected form or leave an interesting
+divergence. Participants need not immediately reach one explanation. Shared work can end with an
+object, a new thought or an open conversation they want to continue.
 
 - **VibeSocial** — explicit roles, addressing, provenance, and access to needed context.
-  `knows / trusts / defers_to` describe relationships, not wider permissions. A technical dispute can
-  be resolved through a check; a human priority through clarification. Several retellings of one
-  source retain a single basis. → [interaction.md](./interaction.md#shared-memory-shared-edits)
-- **VibeLearn** — `experience → revised understanding → useful next move`. That may be a new
-  question, a check, a tool repair, knowledge saved to authorized memory, or a MorphProposal.
+  `knows / trusts / defers_to` describe relationships, not wider permissions. A testable difference
+  can be investigated; a reasoned disagreement can remain open with its grounds intact. When
+  action requires a choice, participants make a working decision without pretending to agree
+  on everything. Several retellings of one source retain a single basis.
+  → [interaction.md](./interaction.md#shared-memory-shared-edits)
+- **VibeLearn** — `experience → changed understanding → the next move and possibilities it opens`.
+  That may be a new question, play with a discovered image, a check, a tool repair, knowledge saved
+  to authorized memory, or a MorphProposal.
   The last is for a justified durable contract change, not for every lesson.
-- **VibeForge** — reusing tested parts of a persona while preserving authorial intent.
-  A template may preserve a useful logic of choice while a new scene reveals a different expression.
+- **VibeForge** — reusing tested parts of a persona while preserving authorship and reasons.
+  A template may support collaboration while a new scene or model changes its expression.
   For example, what will this editor notice in a good draft, and how will it help develop that finding?
   This tests the new persona's own character; filled fields alone are insufficient.
 - **VibeScale** — visibility into versions, access, costs, result quality, and unfinished operations.
@@ -198,14 +218,16 @@ the number of agents or their agreement, but stronger shared understanding and a
 ## v1.4 — Reflection: "emotion is reflection"
 
 Making sense of experience helps reveal what to preserve and what to reconsider. A successful
-improvisation can expose a possibility absent from the original intent; a miss can show where
-the agent answered a neighboring question. Look for the cause in the particular episode,
-the environment, the agent's own conclusion or a durable rule.
+improvisation can change both the idea and what counts as success: a conversation began by seeking
+a solution, but a new distinction or the pleasure of playing together became valuable. This can
+be acknowledged without turning the discovery into a method. When a causal analysis is needed,
+its grounds are the particular episode, the environment, the agent's own conclusion and the
+agreements in effect.
 
 - **VibeReflect** — a "dream" as a metaphor for a separate pass over available experience.
   Self / User / Env are perspectives: the agent's decisions, what the human explicitly said, and
   conditions and tools. Hypotheses about the human remain hypotheses, not hidden knowledge about them.
-- **VibeLearn** — extracting understanding usable in the next decision. Consolidation may remove
+- **VibeLearn** — understanding how experience changes further collaboration. Consolidation may remove
   duplicates, connect material, or preserve a contradiction; mandatory compression damages learning
   when it loses a source or counterexample. No MorphProposal does not mean no lesson.
 

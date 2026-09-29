@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — Six Threads Across the Versions
 lang: en
-version: "1.2.0"
+version: "1.3.0"
 layer: philosophy + engineering
 ---
 
@@ -13,13 +13,17 @@ layer: philosophy + engineering
 > emerges, what supports shared judgment, and what survives change. v1.0→v1.4 is a historical
 > route through the intent, not implemented features; frontmatter tracks the document revision separately.
 
+Evolving collaboration between people and models is central to this reading. Persona, Skills and
+Autonomy can support it without determining the whole experience in advance. Participants change
+the question, the idea and what counts as success; play and curiosity can be enough reason to meet.
+
 The questions:
 
 1. **Human ↔ AI** — how do we discover meaning together, including meaning not yet formulated?
-2. **AI ↔ AI** — how do different positions become useful contributions rather than echoes?
+2. **AI ↔ AI** — how do different voices and positions expand a shared space while retaining the grounds for their differences?
 3. **Where the soul is** — what makes character recognizable, and what supports its continuity?
 4. **Explaining vibe to an AI** — how do we convey a principle of choice, not just intonation?
-5. **Change** — what should be revised in understanding, the environment, or the contract?
+5. **Change** — how does experience change understanding, intent and what counts as success?
 6. **Protection** — how do we preserve trust, distinguishable state, and the ability to correct course?
 
 | Thread | Born in | Crystallizes in |
@@ -35,9 +39,10 @@ The questions:
 but establish neither consciousness, experience, nor a working mechanism. Early versions foregrounded
 particular axes; that does not mean a current product can postpone basic safety until the "right version."
 
-The common point of observation for all six threads is **the next move in a situation**. What received
-attention, who contributed a new thought, how was initiative shared, and what became possible after
-the response? These questions connect the interface, persona, and working environment.
+The common point of observation for all six threads is **the next move and possibilities it opens**.
+What received attention, how was initiative shared, and what became possible after a reply, probe
+or pause — to continue, reconsider, play or stop? These questions connect the interface, persona
+and working environment.
 [VibeCases](./cases.md) examine particular episodes this way; here we trace the questions' development.
 
 ---
@@ -48,12 +53,14 @@ the response? These questions connect the interface, persona, and working enviro
   makes available. In a workshop, a draft invites continuation; in a controlled form, it is a stage
   before submission. Both interfaces can be clear while offering different relationships to unfinished work.
   Form distributes the work: does it help participants discover the question together, or require
-  a vague interest to become a finished brief first?
+  a vague interest to become a finished brief first? In play, it may simply invite them to stay
+  a little longer. Beauty, pleasure and curiosity need no justification through later usefulness.
 - **Explaining vibe to an AI.** VibeSpark connects intention to experience: why this capability
   exists and what it opens up. A vibe token is useful shorthand if already understood; a sample is
   often more precise than an adjective.
 - **Where the soul is.** Metaphorically, in coherent choices: composition, rhythm, text, and action
-  support one intent. An unusual color or joke does not create it automatically.
+  support a recognizable way of participating. The encounter itself may change the initial idea:
+  participants notice that something else interests them.
 - **AI ↔ AI / change / protection.** These axes are not yet separate. One question is already useful:
   can another participant understand the purpose, state, and next move without guessing hidden rules?
 
@@ -64,8 +71,8 @@ the response? These questions connect the interface, persona, and working enviro
 ## v1.1 — Character: the soul is extracted, vibe gets a language for the model
 
 - **Where the soul is.** An explicit contract makes intent available for discussion and testing.
-  `vibe` describes position and voice; `behavior` describes ways of acting. The file carries
-  a description, not the whole identity or a guarantee of recognizable behavior.
+  `vibe` describes position and voice; `behavior` describes ways of acting. This supports participation;
+  a live conversation can develop beyond the initial description.
 - **Explaining vibe to an AI.** Fields provide structure, reasons help make choices, and scenes
   show consequences. Jazz rules leave room for improvisation: an agent may connect what was said,
   offer its own hypothesis, or acknowledge that the question's framing is still emerging. The kind
@@ -73,12 +80,15 @@ the response? These questions connect the interface, persona, and working enviro
   does not always assign its implementation. A compiler is one way to deliver context for that distinction.
 - **Human ↔ AI.** Intent takes shape through both participants' contributions. An agent can offer
   a contestable hypothesis, the human develop it, and a discovered example change the initial question
-  for both. The human need not know the answer in advance or constantly arbitrate proposals. Once
+  for both. What counts as success may change with the question: the quality of an image now matters
+  more than the speed of an answer. This change belongs to the history of collaboration, not to
+  a hidden substitution of the assessment. The human need not know the answer in advance or
+  constantly arbitrate proposals. Once
   a direction is agreed or a choice delegated, the agent's contribution continues through independent
   completion of the work. VibeCases examine ordinary success, discovery, and friction, distinguishing
   intent, the observed move, and the available human assessment.
-- **AI ↔ AI.** Selecting a persona may bring another perspective to the task, but role changes
-  should be intelligible: they do not imply new authority or access to any memory.
+- **AI ↔ AI.** Different models may understand a scene differently and speak in their own voices.
+  Shared commitments let them collaborate with that difference; one uniform persona is not required.
 - **Change / protection.** A contract can be edited and tested as an artifact. Structural validity
   catches one class of errors; a good formulation may still produce a poor experience.
 
@@ -92,8 +102,8 @@ the response? These questions connect the interface, persona, and working enviro
   continuity only where it can be found, understood, and checked. Goals, decision reasons, completed
   work, and unknowns matter. A conversation also needs the point the participants have reached:
   the question has been explained, a remark continues the teasing, or discussion has become an
-  assignment. Saving the topic alone does not convey this; loading every log does not by itself
-  identify what matters.
+  assignment. Saving the topic alone does not convey this. An open divergence can also matter:
+  what participants disagreed about and why the conversation remained interesting.
 - **Protection (self).** VibeFix makes difficulty diagnosable. An absent optional client, for example,
   is not a broken task; an access-permission error needs its own remedy, not a complete reinstall.
   A procedure should be exact where correctness depends on its order.
@@ -116,28 +126,30 @@ the response? These questions connect the interface, persona, and working enviro
 ## v1.2 — Life: controlled self-change and an immune system
 
 - **Changing self.** The **Ship of Theseus** is useful as a question about commitments.
-  Anchor preserves agreed foundations; Surface changes their expression. A changed name or first
-  array element cannot determine a "persona's death." MorphEvent and MorphHistory make changes
-  and reasons traceable; MorphPolicy defines decision-making, verification, and recovery.
+  Anchor preserves agreed foundations; Surface changes their expression. Collaboration may reveal
+  a new idea and call for reconsidering the agreements themselves. MorphEvent, MorphHistory and
+  MorphPolicy connect that reconsideration to a decision, a change and verification.
 - **Where the soul is.** Recognizability lies in a consistent logic of attention and choice across
   situations, not repeating lines verbatim. One character can join a joke, explain a question in
-  depth, or quietly carry out an assignment. The action varies; attention to what the shared work
-  currently needs remains.
+  depth, or quietly carry out an assignment. The action varies; attention to what is happening
+  between participants and what the move makes possible next remains.
 - **AI ↔ AI.** VibeSync supports a common source of commitments across different models and tools.
-  A persona artifact's hash shows equality of its contents. A full prompt hash does not define identity,
-  and matching files do not confirm loading or identical behavior.
+  Shared agreements do not require the same voice or position. Differences may remain after
+  exchanging context; understanding their reasons matters more than treating every divergence
+  as a synchronization error.
 - **Protection (self).** VibeGuard provides observations about drift, context mixing, and format
   errors. `GuardScore` is a possible summary of particular checks, not persona health. Reasons,
   counterexamples, and method limitations matter; warning, blocking, and rollback follow actual risk.
-- **Protection (human).** VibePulse protects attention: it offers a substantive move when useful
-  and steps back when not. Quiet hours and cooldowns suit implemented monitoring;
-  urgency does not create permission for external action.
+- **Protection (human).** VibePulse protects attention: it notices an invitation to continue and
+  leaves room to step away. Play or interest can be reason enough to continue. Quiet hours and
+  cooldowns suit monitoring; urgency does not create permission for external action.
 - **Human ↔ AI.** MorphExperiment can compare two ways of interacting. Reply length, agreement,
   or a continuing dialogue do not establish which is better: a follow-up may express interest or
   result from an error. An adjacent scene is useful when one material condition changes: the human
   now wants an explanation, only a conversation, or has already assigned the work. It tests whether
   the agent can change its move for that reason. Human assessment concerns their experience in the
-  available episode; it does not turn one successful choice into a universal recipe.
+  available episode; it does not turn one successful choice into a universal recipe. If the success
+  criterion itself changes, preserve that in the analysis without presenting a new aim as meeting the old one.
 
 > Emotion is a **living process**: expression changes, commitments remain, and conclusions can be revised.
 
@@ -148,15 +160,16 @@ the response? These questions connect the interface, persona, and working enviro
 - **AI ↔ AI.** VibeSocial helps connect different positions: what another participant verified,
   what they hypothesize, and which question remains. A useful contribution can change the framing
   itself: one agent finds a missing condition, another shows how it changes a possible result.
-  The grounds for the difference matter, not the number of agreeing roles. A `SocialGraph` and
-  protocol may describe relationships and addressing; a `trusts` entry does not turn a message
-  into truth or higher-priority instruction.
+  Disagreement can remain open with its grounds and conditions for possible reconsideration intact.
+  When action is needed, a working choice does not require pretending to agree on everything.
+  A `SocialGraph` and protocol describe relationships and addressing; a `trusts` entry creates
+  neither truth nor new authority.
 - **One AI changes another.** An agent may share a distinction, a counterexample, or a proposal
   for the common contract. The recipient checks relevance and reasons. Changed understanding is
   not necessarily Morph; a durable contract edit requires a human decision.
   An authorized agent may apply an approved diff; the human need not do it manually.
-- **Changing self.** Learn is not a proposal factory: experience is useful when it makes the next
-  move more accurate. Sometimes the needed repair concerns a tool interface or access to context,
+- **Changing self.** Learn can expand what participants notice and allow one another: a new image,
+  way of playing or question. Sometimes the needed repair concerns a tool interface or access to context,
   not another rule added to the agent. Share a finding with the conditions in which it helped and
   an adjacent case where the same move would interfere: this gives another agent grounds to choose.
 - **Protection (fleet).** VibeScale distinguishes versions, access, costs, and actual results.
@@ -167,7 +180,7 @@ the response? These questions connect the interface, persona, and working enviro
   A concrete trial is useful: what would this persona notice, offer, or leave to the human? The
   difference should create a fitting experience; constant novelty is not an aim in itself.
 
-> Emotion is a **network of personas**: difference is useful when it improves shared understanding.
+> Emotion is a **network of personas**: shared commitments leave room for different voices and open disagreement.
 > One source retold by three agents remains one source.
 
 ---
@@ -175,8 +188,9 @@ the response? These questions connect the interface, persona, and working enviro
 ## v1.4 — Reflection: the agent makes sense of itself, the human, and the environment
 
 - **Changing self.** Reflect examines experience, Learn revises understanding, and Morph changes
-  the contract when that is warranted. This is branching, not a conveyor belt. An understood
-  contradiction or a retained good decision can complete a discussion; neither replaces an assigned implementation.
+  the contract when that is warranted. Experience can change the question and success criterion,
+  or remain play that participants do not want to turn into a method. This is branching, not
+  a conveyor belt of required outcomes; work already assigned retains its agreements.
 - **Where the soul is.** The Self mirror is a working assessment of one's decisions and limitations.
   "I turned the discussion into a plan too early" can be checked against an episode. A correction
   after direct feedback shows an ability to return to the subject. Choosing a fitting move
@@ -209,9 +223,9 @@ the response? These questions connect the interface, persona, and working enviro
 
 ## Summary: how each thread grows up
 
-- **Human ↔ AI via vibe:** sharing attention and initiative → forming the question together → developing intent and completing assigned work.
-- **AI ↔ AI:** handing off context → different positions and explicit roles → verifiable shared findings without collective echo.
-- **Where the soul is:** a characteristic next move → persona description → different actions that preserve the meaning of agreements.
+- **Human ↔ AI via vibe:** shared experience → forming the question together → developing intent and what counts as success, including play for its own sake.
+- **AI ↔ AI:** handing off context → different voices and positions → shared findings and reasoned open disagreements.
+- **Where the soul is:** the next move and the room it leaves → persona description as support → recognizability in evolving collaboration.
 - **Explaining vibe to an AI:** principle + reasons + distinguishable scenes; the format helps convey why the needed move changes with context.
 - **Change:** controlled versions → Anchor/Surface and a journal → testing new understanding and its transfer; Morph serves needed, authorized contract edits.
 - **Protection:** diagnostics and recovery → observable feedback → preserving sources, authority, and the ability to correct mistakes.

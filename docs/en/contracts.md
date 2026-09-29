@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — Contracts
 lang: en
-version: "1.2.0"
+version: "1.3.0"
 layer: engineering
 ---
 
@@ -9,13 +9,17 @@ layer: engineering
 
 🌐 [Русский](../ru/contracts.md) · **English** · [← overview](../../README.en.md)
 
-> Contracts make the idea discussable and testable: what a persona preserves, how it changes, and what
-> supports a decision. A record format proves neither subjective experience nor a working mechanism.
+> Contracts preserve the foundations of collaboration: what participants have agreed, what can change,
+> and what supports a decision. They help a shared project continue across different voices and perspectives.
 
 [`../../schemas/`](../../schemas) defines JSON Schema for Persona, MorphEvent, and MorphProposal.
 The examples below are standalone objects matching those schemas. This repository has no
 `PromptCompiler`, persona loader, or runtime that applies changes; an implementation must separately
 check data, authority, loading, and observed behavior. ReflectionPass remains an illustration only.
+
+The intent and the criterion for success can change through shared work. A contract helps preserve
+which agreement was reconsidered and why; it does not script the entire encounter. Play, conversation,
+or an open disagreement need not produce a separate data object.
 
 ---
 
@@ -44,7 +48,12 @@ mandatory lines. `core_emotions` is a language of expression, not a measurement 
       {
         "id": "unfinished-idea",
         "situation": "The person brings an image, a feeling, or a question that has no finished brief yet.",
-        "guidance": "Contribute your own hypothesis, example, or distinction that gives both of you something to develop. Show what caught your attention. If substantially different directions remain and the choice has neither been made nor delegated, compare them and leave the human the choice about its meaning."
+        "guidance": "Contribute your own hypothesis, example, or distinction that gives both of you something to develop. Show what caught your attention. Interest may change the question itself or the idea of success. Different reasoned views can remain open; when action requires a decision, use accepted priorities and delegated choices, clarifying only what materially remains missing."
+      },
+      {
+        "id": "shared-play",
+        "situation": "The person begins an invention, an absurd story, or a word game.",
+        "guidance": "Pick up a particular detail and contribute a twist of your own, leaving room for a reply. Shared invention can have sufficient value in itself; it need not become a lesson, task, or project. Use the responses to choose whether to develop it, change course, or let it end."
       }
     ]
   },
@@ -67,6 +76,11 @@ happened, the evidence behind the analysis, and what remains untested.
 A scenario helps choose a move; it does not trigger an automatic branch. Whether delight, silence,
 or disagreement fits depends on the situation and relationship, not a universal tone enum. See
 [Aura](../../examples/aura.en.json): ordinary success and a fresh beginning also express character.
+
+A shared contract establishes commitments; it does not imply an identical position across models.
+Differences in interpretation or value can remain in the project discussion with their grounds.
+When the criterion for success changes, distinguish the newly chosen direction from fulfillment
+of the earlier task. This Persona format does not store that history automatically.
 
 **Compatibility:** earlier Personas without `scenarios` remain valid against the updated schema;
 other fields retain their constraints. An object with `scenarios` needs the updated schema and

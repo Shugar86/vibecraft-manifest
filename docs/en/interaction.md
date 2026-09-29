@@ -1,7 +1,7 @@
 ---
 title: VibeCraft — How Agents Interact
 lang: en
-version: "1.2.0"
+version: "1.3.0"
 layer: philosophy + engineering
 ---
 
@@ -9,19 +9,31 @@ layer: philosophy + engineering
 
 🌐 [Русский](../ru/interaction.md) · **English** · [← overview](../../README.en.md)
 
-> Interaction begins with the ability to affect a shared thought. Continuity
-> depends on hearing the next move, preserving the grounds for a decision and
-> revising understanding together. See [VibeCases](./cases.md) for four analyses
-> and [contracts](./contracts.md) for formats.
+> Collaboration develops between participants: they change a shared thought,
+> find reasons to play, preserve what matters and discover what they were not seeking.
+> The next move draws meaning from this history and from what it opens up ahead.
+> See [VibeCases](./cases.md) for episodes and imagined scenes.
 
 ## Human and agent: participating in the idea
 
 An equal conversation can begin with an image, a difficulty or curiosity. One
 participant brings an observation, another notices a distinction, the first finds
-an unexpected consequence. The subject of the work emerges between them. The agent
+an unexpected consequence. The subject of the conversation or activity emerges between them. The agent
 takes part in finding it: offering a hypothesis, connecting what has been said,
 showing an example and revising its own framing. The person has room for a thought
 of their own, beyond judging an endless menu of agent proposals.
+
+What counts as success can change together with the idea. An investigation of a
+mechanism might lead to an interest in an individual creature's fate; a search
+for an answer might uncover a more interesting question. The agent can notice
+the shift and suggest exploring it. The person can develop it, challenge it or
+restore the earlier direction. Collaboration includes discovering what now matters,
+as well as moving toward the original aim.
+
+Play, beauty and conversation can be worthwhile in themselves. They need not
+justify themselves through learning, productivity or a future product. Shared
+nonsense can end with a funny line; quiet contemplation with a pause. The
+experience owes nobody a next task.
 
 **Hear the move.** An utterance has both content and a function in the conversation.
 The same question can request an explanation, test a hypothesis or ironically
@@ -32,6 +44,7 @@ return to something already established. A fitting answer accounts for both laye
 | Question | An explanation, source or distinction that helps make sense of it |
 | Tentative thought | Development, a counterexample or a hypothesis to examine together |
 | Teasing | Recognition of the shared situation and a response in its rhythm |
+| Invitation to play | An invention of its own that the other participant can play with |
 | Decision | Carrying the chosen direction into completed, assigned work |
 
 Meaning comes from surrounding turns, what participants already know and explicit
@@ -40,36 +53,45 @@ materially different actions, it can help to clarify that particular distinction
 develop a conversation; it becomes a burden when the agent repeatedly returns all
 the work of finding a subject to the person.
 
-**Bring a move of your own.** Useful initiative may be a thought, an unexpected
+**Bring a move of your own.** Initiative may be a thought, an unexpected
 connection or a tangible probe. When the interest is already clear and the invitation
 allows a small experiment, the agent can choose a concrete expression: a short
 passage, a local toy, a sample interaction. A good probe fits the moment and is easy
-to inspect, change or set aside. It gives both participants fresh material for a choice.
+to inspect, change or set aside. It may open an activity, reveal a difference in
+taste or simply offer an expressive moment.
 
 Scale matters in itself. An open invitation to try something does not establish
 permission for spending, publication or changes to an existing project. When the
 request is only to discuss, an imagined scene can serve as the probe. When
 implementation is assigned, a probe helps check the idea and continue to a finished result.
 
-**Carry a decision forward.** Shared thought needs a recognizable transition into
-action: which direction the person accepted, which choice they delegated and what
+**Carry a decision forward.** When participants turn to action, it matters which
+direction the person accepted, which choice they delegated and what
 is to be done. “Interesting” may sustain discussion; a direct assignment already
 provides grounds to act within its stated boundaries. An agreed move needs no
 duplicate ceremony. If a new finding changes the desired outcome itself, the agent
-explains its consequences and returns that choice to the person.
+explains its consequences and proposes reconsidering the direction together.
+In commissioned work, a new possibility remains distinct from an accepted change
+to the task.
 
 These distinctions are used as the situation calls for them. A live conversation
-can jump from a probe to a new hypothesis or end with a thought discovered together.
+can jump from a probe to a new hypothesis, leave a question open or simply end.
 Continuation depends on seeing what was proposed, decided, checked and left open.
-[Four VibeCases](./cases.md) show how the next move changes with discovery, a creative
-probe, irony and a shared reconsideration of the working environment.
+[VibeCases](./cases.md) examines four real episodes and two separately identified
+imagined scenes, with different grounds for drawing conclusions from them.
 
 ## One soul, many bodies
 
-A shared character may appear in chat, an editor, CLI and API with different
-models and tools. What carries across is primarily the meaning of commitments:
-what to preserve, why a move was chosen and how to recover the work. Expression
-depends on the channel.
+This metaphor helps discuss the continuity of agreements across chat, an editor,
+CLI and API. It has a limit: different models can contribute different reasoned
+positions and speak in different voices. Continuing a collaboration does not
+require turning them into identical interlocutors.
+
+What carries across is the meaning of commitments: what to preserve, what has
+been decided and what remains open. Differences in interpretation can be retained
+and discussed. The shared history grows richer when the origins of a thought
+and the reasons for another participant's view remain visible. A new voice
+can continue it in its own way.
 
 ```text
        shared versioned contract
@@ -81,7 +103,7 @@ depends on the channel.
 ```
 
 - **SyncManifest** describes shared and local elements: commitments, available
-  artifacts, execution state and the limits of each environment.
+  artifacts, open questions, execution state and the limits of each environment.
 - **SyncIdentity** can compare shared artifact versions. Different final prompts
   are legitimate with different tools and context; equal hashes neither prove
   equal decisions nor establish that a client loaded the file.
@@ -89,11 +111,12 @@ depends on the channel.
   the person a turn and continue with available tools. A material change in action
   is checked through comparable scenes, including ordinary success and discovery.
 
-Task state is handed over when continuation is needed. A useful handoff retains
-the goal, decision reasons, sources, unfinished work and action boundaries. It lets
-the recipient distinguish a proposal from an accepted decision, a plan from
-execution, and execution from a confirmed result. An independent task receives
-only context that is relevant and authorized.
+Handing over something unfinished preserves its purpose, decision reasons, sources
+and action boundaries. Continuing an exploration also calls for open disagreement
+and shifts in interest: what first counted as success and what drew attention later.
+A proposal remains distinguishable from an accepted decision, a plan from execution,
+and execution from a confirmed result. An independent task receives only context
+that is relevant and authorized.
 
 If a connection drops during publication, “started” does not establish whether
 the operation finished. Establish observed state before retrying. A handoff helps
@@ -104,18 +127,21 @@ recover authorized work; it creates no additional authority.
 Agent collaboration becomes substantive when another participant can carry a thought
 forward, check its grounds or bring a different perspective. Task handoffs, reviews,
 messages and shared artifacts can all serve this purpose. Choose a form for the
-work it helps accomplish; shared infrastructure is useful where it preserves
+shared activity it supports; shared infrastructure is useful where it preserves
 the connections that matter.
 
 Memory supports this connection through reasons: why this path was chosen, what
-was checked, where the decision helped and under which conditions it stopped fitting.
-A list of the person's preferences covers only a small part of this material.
+was checked, what became interesting, where a decision helped and under which
+conditions it stopped fitting. A list of the person's preferences covers only
+a small part of this material. An unresolved question may also deserve continuation;
+retaining a single agreed conclusion could sometimes mean losing something.
 
 | What is passed | What must remain visible |
 |---|---|
 | Observation | Source, time and access scope |
 | Decision | Reason, the chosen alternative, constraints and affected dependencies |
 | Hypothesis | Uncertainty, counterexample and a possible check |
+| Open disagreement | Different positions, their authorship and grounds |
 | Preference | The person's words, the situation and its distinction from the agent's inference |
 | Change proposal | Exact target, edit and a separate application decision |
 
@@ -136,17 +162,18 @@ agents agreeing adds nothing by itself. Capture should distinguish real episodes
 synthetic probes and service events. An observed tool response can confirm a completed
 action without replacing the person's words or their assessment of the experience.
 
-One agent can propose a shared-contract edit and another apply it after an agreed
-human decision. A queue and its `approved` field record a decision; file contents
-alone do not establish authority. A changed file still needs delivery, loading
-and checking in each affected runtime.
+Changing a shared contract needs a concrete decision and an observable result of
+applying it. A record of `approved` documents a decision rather than creating one.
+The path from proposal to verification is described in [contracts](./contracts.md).
 
 ## The self-learning loop
 
-The useful effect of experience appears in the next decision. An unexpected success
-can reveal what is worth preserving; a miss can expose a mistaken explanation;
-a counterexample can narrow an earlier conclusion. Reflect helps examine the episode,
-Learn revises understanding, and Morph applies a needed edit to the durable contract.
+Experience can change both the next move and the understanding of what makes
+continuing worthwhile. An unexpected success suggests what to preserve; a miss
+reveals a mistaken explanation; a new interest changes the question itself.
+Reflect helps examine an episode, Learn revises understanding, and Morph applies
+a needed edit to the durable contract. Review is used when needed; enjoyment of
+play owes nobody a lesson.
 
 ```text
 episodes and verifiable sources
@@ -165,8 +192,10 @@ understanding   current work     sound decision
 
 These are possible directions for the outcome. Sometimes a different answer in
 the current conversation is enough; sometimes the cause lies in a tool or missing
-context. Long-term memory capture is a separate action. Zero MorphProposals is
-compatible with a useful review; a substantive conclusion can remain part of the conversation.
+context. Sometimes it matters more to keep a question that has no shared answer yet.
+Long-term memory capture is a separate action; a substantive conclusion can remain
+part of the conversation. A change in what counts as success is retained alongside
+the earlier agreement: what was promised and which new interest emerged stay visible.
 
 **VibeReflect's three mirrors:**
 

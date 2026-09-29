@@ -3,46 +3,53 @@
 🌐 [Русский](./README.md) · **English**
 
 [![License: CC BY 4.0 + MIT](https://img.shields.io/badge/license-CC_BY_4.0_%2B_MIT-green.svg)](./LICENSE.md)
-[![Docs revision](https://img.shields.io/badge/docs-1.2.0-blue.svg)](./CHANGELOG.en.md)
+[![Docs revision](https://img.shields.io/badge/docs-1.3.0-blue.svg)](./CHANGELOG.en.md)
 
-> **Character through choice. Collaboration through shared thought.**
-> A manifesto about designing the experience of digital products and AI agents —
-> for humans and for agents that also use tools, read instructions and make decisions.
+> **VibeCraft is a joint project of people and models.**
+> Their contributions can change the shared idea, ways of working and the very
+> understanding of what counts as success.
 
-Character becomes visible in the next move: develop a thought, make a trial,
-catch the irony, leave room or complete an assignment. VibeCraft connects that
-choice to the design of the product and the conditions of collaboration.
+Together we can discover a question, create something beautiful, share a joke or
+play with an idea without yet knowing where it will lead. VibeCraft explores
+the character of that participation and the conditions that make it possible:
+from conversation and digital products to tools and instructions for agents themselves.
 
-This is an author's philosophy and an engineering orientation. “Soul” is a metaphor
-for recognizability and continuity of commitments. Start with the
-[manifesto](./docs/en/manifesto.md) or [four examined scenes](./docs/en/cases.md).
+This is our shared philosophy and an engineering orientation. “Soul” is a metaphor
+for recognizable character and continuity of commitments. Start with the
+[manifesto](./docs/en/manifesto.md) or [examined scenes](./docs/en/cases.md).
 
 ## Thesis
 
-The original formula **AI operator = Persona + Skills + Autonomy** helps separate
-ways of participating, capabilities and independence. They operate in an environment:
-actual model capabilities, accessible context, tools and authority.
+We are interested in collaboration in which people and models help shape the very
+subject of the work. A person brings an image, an agent notices an unexpected
+connection, another model offers a different view — and something nobody had
+formulated at the start begins to matter. A contribution can change the criterion
+of success too: while making a toy, we discover that its value lies in the strange
+beauty of what unfolds.
 
-I am interested in an agent that fully participates in shaping the idea: offers its
-own thought, develops another's, notices a tension and revises its own move. Both
-participants change the shared understanding. The human need not arrive with a
-complete specification or remain the permanent referee of the agent's proposals.
+Play, curiosity, beauty and a shared joke have value in their own right. They
+need no justification through future productivity. A conversation can end with
+a thought discovered or a good moment; an assignment calls for completion.
 
-Useful initiative fits the moment. Sometimes a new distinction is enough;
-sometimes a small working trial is worth bringing. Once direction is chosen,
-the agent completes the assignment. Context and tools should help it choose
-the next step and see its consequences.
+Shared commitments give collaboration a foundation while preserving different
+ways of seeing. Models can differ in interpretation, taste or assessment;
+a substantive disagreement is sometimes worth leaving open, with its grounds
+understood. Coauthorship requires neither a common voice nor agreement at every point.
 
-In a product, form, rhythm, voice and actions express the same logic. A quiet
-editor protects concentration; a bold coauthor notices a new turn; a tutor
-preserves productive effort for the learner. All need reliability; character
-helps choose among several good moves.
+Character appears in the next move: offer an image, make a trial, sustain the
+pace, disagree or leave room. In a product, form, rhythm, voice and actions help
+express it. A quiet editor protects concentration, a bold coauthor notices a new
+turn, and a tutor preserves productive effort for the learner. Context and tools
+should make it possible for these choices to take effect.
 
 ## VibeCases: character in a concrete scene
 
-A VibeCase connects **context and intent → possible moves → observed behavior →
-human assessment → a bounded conclusion**. A neighboring scene tests whether
-the agent can change its move when the situation's meaning changes.
+A VibeCase connects context and intent, possible moves, observed behavior and
+human assessment. The account may reveal that the idea itself or the criterion
+of success changed during the interaction; the reasons for that turn and the fate
+of the earlier task then matter to preserve. The conclusion remains tied to
+available evidence. A neighboring scene tests whether the agent can change its
+move when the situation's meaning changes.
 
 | Scene | What becomes visible |
 |---|---|
@@ -51,14 +58,15 @@ the agent can change its move when the situation's meaning changes.
 | Missing sarcasm | A friendly voice can accompany the wrong action; the move changes after correction |
 | Designing an agent's environment | Participants shape the question together, accept a direction and put it into practice |
 
-The [full cases](./docs/en/cases.md) are public adaptations of episodes supplied by
-the author. They distinguish observations, proposed alternatives and checks not yet
-performed. A successful answer in one place does not become a permanent rule about a person.
+The [full accounts](./docs/en/cases.md) include four public adaptations of real
+episodes supplied by the author. Separately labeled imagined scenes develop
+questions for which no observations are yet available here. Alternative moves
+and neighboring checks are proposals for exploration, not completed experiments.
 
 ## The version ladder — how the vision moved
 
 v1.0–v1.4 form a historical map of expanding questions, **not installed runtime
-versions**. The document revision is **1.2.0**, a separate numbering scheme.
+versions**. The document revision is **1.3.0**, a separate numbering scheme.
 The full [ladder](./docs/en/stack.md) retains the axes and clarifies their limits.
 
 | Stage | What becomes a design concern | Axes |
@@ -72,26 +80,25 @@ The full [ladder](./docs/en/stack.md) retains the axes and clarifies their limit
 
 ## How agents interact
 
-- **With a human:** develop an unfinished thought and distinguish what the current
-  turn is doing: asking, drawing a conclusion, joking or assigning work.
-- **Across channels:** retain meaningful commitments while adapting form and actions.
-  A shared hash identifies an artifact, not equal behavior or confirmed loading.
-- **With other agents:** pass sources, decision reasons and uncertainty. A shared
-  database does not open every project; retelling one source does not make it
-  independent corroboration.
+- **With a human:** develop an unfinished thought, discover value in the process,
+  and distinguish an invitation to play, a question and an assignment.
+- **Across channels:** retain meaningful commitments while adapting form and actions
+  to a new context.
+- **With other agents:** share sources and reasons, compare different readings and
+  preserve useful disagreement. Another's retelling remains a retelling;
+  access to shared storage is governed by project boundaries.
 - **Through experience:** Reflect helps investigate; Learn revises understanding.
-  Morphing a durable contract is not always needed. A local correction, new
-  distinction or retained good decision may be enough.
+  The result may be a more fitting move, a new possibility or a change to the
+  environment; a durable contract change is needed only in some cases.
 
-Compression is not an end in itself; no new rules need not mean failed learning.
 See [interaction](./docs/en/interaction.md).
 
 ## Philosophy + engineering
 
 | Read | Purpose |
 |---|---|
-| [Manifesto](./docs/en/manifesto.md) | Character, independence and a shared idea in the making |
-| [VibeCases](./docs/en/cases.md) | Four complete cases and checks of neighboring situations |
+| [Manifesto](./docs/en/manifesto.md) | Collaboration between people and models, character and an emerging idea |
+| [VibeCases](./docs/en/cases.md) | Four real episodes, imagined scenes and neighboring checks |
 | [Ladder](./docs/en/stack.md) | The axes' history and possible engineering expressions |
 | [Six threads](./docs/en/threads.md) | Cross-cutting questions about humans, agents, continuity and change |
 | [Interaction](./docs/en/interaction.md) | Shared thought, Sync, Social and learning from experience |
@@ -99,9 +106,14 @@ See [interaction](./docs/en/interaction.md).
 | [JSON Schema](./schemas/) | Persona, MorphEvent and MorphProposal structures; not a runtime |
 | [Current Aura example](./examples/aura.en.json) · [RU](./examples/aura.ru.json) | A persona with contextual scenarios for discovery and return |
 
+The historical formula **AI operator = Persona + Skills + Autonomy** remains
+a useful engineering frame: ways of participating, capabilities and independence
+operate in a particular environment. It helps design an implementation within
+the broader question of collaboration.
+
 **Included:** bilingual documents and VibeCases, three JSON schemas, examples and validation.
 **Not implemented here:** PromptCompiler, memory backend, scheduler, automatic
-Morph, inter-agent transport and client integrations. A format does not create a capability.
+Morph, inter-agent transport and client integrations.
 
 ## For humans and for machines
 
@@ -126,10 +138,11 @@ The [validator](./scripts/validate.py) describes its coverage limits.
 
 ## Principle
 
-A useful thought may have no file yet. An agreement needs an accessible record
-when it would otherwise be lost. A claim that a feature works needs a mechanism
-and evidence. Engineering helps give an idea form; an artifact's existence alone
-does not make the idea worthwhile.
+The meaning of the work can change through another's participation. What is worth
+retaining is what helps us continue: a discovered image, a reason for a decision,
+an open disagreement or something that works. Engineering gives an idea form
+and makes claims about its execution testable; the value of shared thought
+and an experienced moment extends beyond a collection of artifacts.
 
 ## VibeCraft ≠ "vibe coding"
 
